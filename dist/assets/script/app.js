@@ -65,6 +65,7 @@ if (mySwiper) {
 
 let dropdownLinks = document.querySelectorAll("#dropdown li a");
 let searchInput = document.querySelector("#search");
+let mblsearch = document.querySelector("#mblsearch");
 let mobileMenu = document.querySelector(".mobile-menu");
 let navbar = document.querySelector(".mobile-navbar");
 let closeNavbar = document.querySelector(".close-navbar");
@@ -87,4 +88,13 @@ mobileMenu.addEventListener("click", () => {
 closeNavbar.addEventListener("click", () => {
   navbar.classList.add("-left-60");
   navbar.classList.remove("left-0");
+});
+
+let mobiledropdownLinks = document.querySelectorAll(".mbl-dropdown li a");
+
+mobiledropdownLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    mblsearch.value = link.getAttribute("href");
+  });
 });
