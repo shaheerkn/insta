@@ -19,5 +19,5 @@
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  font-size: 30px;
+  font-size: 30px !important;
 }

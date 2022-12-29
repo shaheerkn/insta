@@ -574,6 +574,10 @@ video {
   bottom: 1.25rem;
 }
 
+.bottom-3 {
+  bottom: 0.75rem;
+}
+
 .right-2\.5 {
   right: 0.625rem;
 }
@@ -584,10 +588,6 @@ video {
 
 .right-2 {
   right: 0.5rem;
-}
-
-.bottom-3 {
-  bottom: 0.75rem;
 }
 
 .bottom-\[55px\] {
@@ -1746,7 +1746,7 @@ video {
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  font-size: 30px;
+  font-size: 30px !important;
 }
 
 .after\:absolute::after {
