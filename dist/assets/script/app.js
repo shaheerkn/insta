@@ -66,35 +66,42 @@ if (mySwiper) {
 let dropdownLinks = document.querySelectorAll("#dropdown li a");
 let searchInput = document.querySelector("#search");
 let mblsearch = document.querySelector("#mblsearch");
-let mobileMenu = document.querySelector(".mobile-menu");
-let navbar = document.querySelector(".mobile-navbar");
-let closeNavbar = document.querySelector(".close-navbar");
 
 if (dropdownLinks && searchInput) {
   dropdownLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
-      console.log(link.getAttribute("href"));
       searchInput.value = link.getAttribute("href");
+      document.getElementById("dropdown").classList.toggle("hidden");
     });
   });
 }
 
-mobileMenu.addEventListener("click", () => {
-  navbar.classList.remove("-left-60");
-  navbar.classList.add("left-0");
-});
+let mobileMenu = document.querySelector(".mobile-menu");
+let navbar = document.querySelector(".mobile-navbar");
+let closeNavbar = document.querySelector(".close-navbar");
 
-closeNavbar.addEventListener("click", () => {
-  navbar.classList.add("-left-60");
-  navbar.classList.remove("left-0");
-});
+if (mobileMenu && navbar && closeNavbar) {
+  mobileMenu.addEventListener("click", () => {
+    navbar.classList.remove("-left-60");
+    navbar.classList.add("left-0");
+  });
+
+  closeNavbar.addEventListener("click", () => {
+    navbar.classList.add("-left-60");
+    navbar.classList.remove("left-0");
+  });
+}
 
 let mobiledropdownLinks = document.querySelectorAll(".mbl-dropdown li a");
+let mobiledropdown = document.querySelector(".mbl-dropdown");
 
-mobiledropdownLinks.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-    mblsearch.value = link.getAttribute("href");
+if (mobiledropdownLinks && mobiledropdown) {
+  mobiledropdownLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      mblsearch.value = link.getAttribute("href");
+      mobiledropdown.classList.toggle("hidden");
+    });
   });
-});
+}
