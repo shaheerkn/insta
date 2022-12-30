@@ -17,173 +17,185 @@
 <body class="bg-[#f6f6f6]">
   <div class="relative">
     <img class="w-[100px] mx-auto py-3" src="./assets/imgs/ig-logo-top.jpg" alt="brand">
-</div>
+  </div>
 
-<nav class="bg-[#FC4F1E] py-5 md:py-0 relative">
-  <div class="flex flex-wrap items-center justify-center mx-auto">
-    <div class="items-center justify-between w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
-      <button class="md:hidden ml-5 mobile-menu">
-        <img src="./assets/imgs/hamburger.png">
-      </button>
-      <ul class="navbar hidden md:flex items-center flex-col md:py-4  lg:py-6 rounded-lg text-white md:flex-row xl:space-x-20 lg:md:space-x-12 md:md:space-x-6  xl:text-[22px] lg:text-[20px] md:text-[18px]">
-        <li class="relative">
-          <a href="#" class="block pl-3 pr-4 rounded md:bg-transparent py-2 pb-3 md:p-0 after:absolute after:content after:w-full after:h-1 after:left-0 after:-bottom-2 after:bg-white" aria-current="page">HOME</a>
+  <nav class="bg-[#FC4F1E] py-5 md:py-0 relative">
+    <div class="flex flex-wrap items-center justify-center mx-auto">
+      <div class="items-center justify-between w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
+        <button class="md:hidden ml-5 mobile-menu">
+          <img src="./assets/imgs/hamburger.png">
+        </button>
+        <ul class="hidden md:flex items-center flex-col md:py-4  lg:py-6 rounded-lg text-white md:flex-row xl:space-x-20 lg:md:space-x-12 md:md:space-x-6  xl:text-[22px] lg:text-[20px] md:text-[18px]">
+          <li class="relative">
+            <a href="#" class="block pl-3 pr-4 rounded md:bg-transparent py-2 pb-3 md:p-0 after:absolute after:content after:w-full after:h-1 after:left-0 after:-bottom-2 after:bg-white" aria-current="page">HOME</a>
+          </li>
+          <li>
+            <a href="./blog.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">BLOGS</a>
+          </li>
+          <li>
+            <a href="./blog.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">ABOUT US</a>
+          </li>
+          <li class="relative group ">
+            <a href="./blog.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">TOOLS</a>
+
+            <div class="dropdown absolute left-0 group-hover:flex flex-col gap-3 w-[250px] p-2 bg-[#FC4F1E] z-[1000] hidden">
+              <a href="picture.html">Instagram Picture</a>
+              <a href="video.html">Instagram Video</a>
+              <a href="story.html">Insagram Story</a>
+              <a href="dp.html">Instagram DP</a>
+              <a href="reels.html">Instagram Reels</a>
+              <a href="igtv.html">Instagram IGTV</a>
+            </div>
+          </li>
+          <li>
+            <a href="./blog.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">CONTACT US</a>
+          </li>
+          <li class="text-black relative navSearchWrapper">
+            <input type="text" class="h-auto m-0 py-2 px-4 focus:outline-none text-[18px] outline-none border-none rounded-full opacity-0" placeholder="jot something">
+            <button type="submit" class="absolute right-[20px] top-[5px] bg-white rounded-full z-10 p-2">
+              <img src="./assets/imgs/Group 185.png" alt="search-icon" class= "navSearch ">
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="md:hidden mobile-navbar w-60 absolute pt-6 bg-white pr-4 pb-8 z-[1000] transition-all -left-60 top-0">
+      <button class="close-navbar absolute left-3 top-7"><img src="./assets/imgs/back-arrow.png" alt="" class=""></button>
+      <h4 class="pl-[46px] text-[15px] text-[#FC4F1E]">Instagram Logo</h4>
+      <ul class="pl-[46px] flex flex-col gap-6 mt-8">
+        <li>
+          <a href="#" class="text-[11px] text-[#FC4F1E]">HOME</a>
         </li>
         <li>
-          <a href="./blog.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">BLOGS</a>
+          <a href="./blog.html" class="text-[11px]">BLOGS</a>
         </li>
         <li>
-          <a href="./blog.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">ABOUT US</a>
+          <a href="./blog.html" class="text-[11px]">CONTACT US</a>
         </li>
         <li>
-          <a href="./blog.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">TOOLS</a>
+          <a href="./blog.html" class="text-[11px]">ABOUT US</a>
         </li>
         <li>
-          <a href="./blog.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">CONTACT US</a>
-        </li>
-        <li class="text-black relative navSearchWrapper">
-          <input type="text" class="h-auto m-0 py-2 px-4 focus:outline-none text-[18px] outline-none border-none rounded-full opacity-0" placeholder="jot something">
-          <button type="submit" class="absolute right-[20px] top-[5px] bg-white rounded-full z-10 p-2">
-            <img src="./assets/imgs/Group 185.png" alt="search-icon" class= "navSearch ">
-          </button>
+          <a href="./blog.html" class=" text-[11px]">TOOLS</a>
         </li>
       </ul>
-    </div>
-  </div>
-  <div class="md:hidden mobile-navbar w-60 absolute pt-6 bg-white pr-4 pb-8 z-[1000] transition-all -left-60 top-0">
-    <button class="close-navbar absolute left-3 top-7"><img src="./assets/imgs/back-arrow.png" alt="" class=""></button>
-    <h4 class="pl-[46px] text-[15px] text-[#FC4F1E]">Instagram Logo</h4>
-    <ul class="pl-[46px] flex flex-col gap-6 mt-8">
-      <li>
-        <a href="#" class="text-[11px] text-[#FC4F1E]">HOME</a>
-      </li>
-      <li>
-        <a href="./blog.html" class="text-[11px]">BLOGS</a>
-      </li>
-      <li>
-        <a href="./blog.html" class="text-[11px]">CONTACT US</a>
-      </li>
-      <li>
-        <a href="./blog.html" class="text-[11px]">ABOUT US</a>
-      </li>
-      <li>
-        <a href="./blog.html" class=" text-[11px]">TOOLS</a>
-      </li>
-    </ul>
-    <form class="text-center mt-[43px] pl-[13px]">
-      <label for="" class="text-[14px]"> NEED ANY HELP?</label>
-      <div class="flex relative h-[43px] mt-[10px]">
-        <input type="text" class="bg-[#E9E9E9] rounded-full w-full h-[30px] text-[7px] pl-[13px]" placeholder="instadownloader@mail.com">
-        <button class="bg-[#FC4F1E] rounded-full text-white px-6 h-[30px] absolute right-0 font-semibold">SEND</button>
-      </div>
-    </form>
-
-    <div class="flex mt-4 gap-8 justify-center sm:mt-6">
-      <a href="#" class="bg-[#FC4F1E] text-white  border border-[#FC4F1E] rounded-full p-1">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path></svg>
+      <form class="text-center mt-[43px] pl-[13px]">
+        <label for="" class="text-[14px]"> NEED ANY HELP?</label>
+        <div class="flex relative h-[43px] mt-[10px]">
+          <input type="text" class="bg-[#E9E9E9] rounded-full w-full h-[30px] text-[7px] pl-[13px]" placeholder="instadownloader@mail.com">
+          <button class="bg-[#FC4F1E] rounded-full text-white px-6 h-[30px] absolute right-0 font-semibold">SEND</button>
+        </div>
+      </form>
+  
+      <div class="flex mt-4 gap-8 justify-center sm:mt-6">
+        <a href="#" class="bg-[#FC4F1E] text-white  border border-[#FC4F1E] rounded-full p-1">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path></svg>
+          </a>
+  
+        <a href="#" class="bg-[#FC4F1E] text-white  border border-[#FC4F1E] rounded-full p-1">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
         </a>
-
-      <a href="#" class="bg-[#FC4F1E] text-white  border border-[#FC4F1E] rounded-full p-1">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+  
+        <a href="#" class="bg-[#FC4F1E] text-white border border-[#FC4F1E] rounded-full p-1">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg>
       </a>
-
-      <a href="#" class="bg-[#FC4F1E] text-white border border-[#FC4F1E] rounded-full p-1">
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg>
-    </a>
-  </div>
-  </div>
-</nav>
+    </div>
+    </div>
+  </nav>
 
   <div class="relative flex justify-center items-center max-h-[740px] 2xl:min-h-[740px] xl:min-h-[550px] min-h-[480px]">
     <div class="absolute top-0 left-0 right-0 bottom-0 z-10 after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-40 ">
-      <img src="./assets/imgs/flow-5-hero.png" alt="header-backgroud" class="max-h-full inline-block w-full h-full object-cover z-0 ">
+      <img src="./assets/imgs/flow-hero-bg.png" alt="header-backgroud" class="max-h-full inline-block w-full h-full object-cover z-0 ">
     </div>
 
     <div class="max-w-[800px] text-center relative z-50 text-white">
       <div class="mb-8 lg:mb-10 2xl:mb-14 text-center">
-        <img class="mx-auto" src="./assets/imgs/art1-02.png" alt="image">
+        <img class="mx-auto" src="./assets/imgs/art1-04.png" alt="image">
       </div>
       <h1 class="font-bold text-[24px] md:text-[30px] lg:text-[40px] 2xl:text-[60px] uppercase">instagram Profile
         Downloader</h1>
     </div>
-
     <div class="absolute lg:bottom-5 bottom-3 w-full px-4 2xl:px-40 md:px-12 z-30">
       <div class="flex items-center justify-between lg:flex-row flex-col">
-            <div class="relative w-full lg:mb-0 mb-3 md:mb-4">
-              <input type="search" id="search" class="min-w-full w-full p-4 2xl:pl-24 xl:pl-20 md:pl-16 pl-8 xl:py-6 lg:py-4 md:text-[25px] text-[9px] rounded-md md:rounded-2xl outline-none" value="http:/instagram.com/v/WDXERECCRHYHYHBF" required>
-  
-              <div class="absolute inset-y-0 left- flex items-center 2xl:pl-14 xl:pl-10 lg:pl-8 pl-4 pointer-events-none">
-                <img class="md:w-5 md:h-5 w-3 h-3" src="./assets/imgs/Icon feather-link.png" alt="feature">
-              </div>
-  
-              <button id="headerBtn" class="absolute right-2.5 2xl:bottom-2.5 xl:bottom-3 lg:bottom-[10px] md:bottom-3 bottom-[6px] inline-flex items-center xl:py-4 py-3 2xl:px-12 xl:px-8 px-4 font-medium text-center text-white bg-[#3481F0] md:rounded-2xl rounded-lg 2xl:text-[25px]
-              lg:text-[20px] text-[8px] focus:outline-none shadow-md shadow-[#3481F0]" type="button">
-                <span>
-                  <img class="w-3 h-3 mr-2 md:w-[20px] md:h-[20px] md:mr-5" src="./assets/imgs/icon-btn.png" alt="person">
-                </span>
-                Instagram Profile
-  
-                <svg class="md:ml-5 md:w-5 md:h-5 ml-2 w-3 h-3" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-              </button>
-  
-              <div id="dropdown" class="z-10 bg-white rounded-xl absolute w-full sm:w-[500px] right-0 hidden">
-                <ul class="py-1 text-sm px-4">
-                  <li>
-                    <a href="instagram link" class="flex items-center py-2 text-[#3481F0] border-b w-1/1 xl:w-1/2 mx-auto">
-                      <span>
-                        <img class="w-4 h-4 mr-3" src="./assets/imgs/igtv.svg" alt="person">
-                      </span>
-                      <span>Instagram IGTV</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="instagram reels" class="flex items-center py-2 text-[#3481F0] border-b w-1/1 xl:w-1/2 mx-auto">
-                      <span>
-                        <img class="w-4 h-4 mr-3" src="./assets/imgs/instagram-reels-icon.svg" alt="person">
-                      </span>
-                      <span>Instagram Reels</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="instagram dp" class="flex items-center py-2 text-[#3481F0] border-b w-1/1 xl:w-1/2 mx-auto">
-                      <span>
-                        <img class="w-4 h-4 mr-3" src="./assets/imgs/Icon-awesome-user.svg" alt="person">
-                      </span>
-                      <span>Instagram DP</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="instagram story" class="flex items-center py-2 text-[#3481F0] border-b w-1/1 xl:w-1/2 mx-auto">
-                      <span>
-                        <img class="w-4 h-4 mr-3" src="./assets/imgs/insta-story-icon.svg" alt="person">
-                      </span>
-                      <span>ISTAGRAM Story</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="instagram video" class="flex items-center py-2 text-[#3481F0] border-b w-1/1 xl:w-1/2 mx-auto">
-                      <span>
-                        <img class="w-4 h-4 mr-3" src="./assets/imgs/Icon-feather-play-circle.svg" alt="person">
-                      </span>
-                      <span>Instagram Video</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="instagram picture" class="flex items-center py-2 text-[#3481F0] border-b w-1/1 xl:w-1/2 mx-auto">
-                      <span>
-                        <img class="w-4 h-4 mr-3" src="./assets/imgs/insta-capture.svg" alt="person">
-                      </span>
-                      <span>Instagram Picture</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+        <div class="relative w-full lg:mb-0 mb-3 md:mb-4">
+          <input type="search" id="search" class="min-w-full w-full p-4 2xl:pl-24 xl:pl-20 md:pl-16 pl-8 xl:py-6 lg:py-4 md:text-[25px] text-[9px] rounded-md md:rounded-2xl outline-none" value="http:/instagram.com/v/WDXERECCRHYHYHBF" required>
+
+          <div class="absolute inset-y-0 left- flex items-center 2xl:pl-14 xl:pl-10 lg:pl-8 pl-4 pointer-events-none">
+            <img class="md:w-5 md:h-5 w-3 h-3" src="./assets/imgs/Icon feather-link.png" alt="feature">
+          </div>
+
+            <button id="headerBtn" class="absolute right-2.5 2xl:bottom-2.5 xl:bottom-3 lg:bottom-[10px] md:bottom-3 bottom-[6px] inline-flex items-center xl:py-4 py-3 2xl:px-12 xl:px-8 px-4 font-medium text-center text-white bg-[#3481F0] md:rounded-2xl rounded-lg 2xl:text-[25px]
+            lg:text-[20px] text-[8px] focus:outline-none shadow-md shadow-[#3481F0]" type="button">
+              <span>
+                <img class="w-3 h-3 mr-2 md:w-[20px] md:h-[20px] md:mr-5" src="./assets/imgs/icon-btn.png" alt="person">
+              </span>
+              Instagram Profile
+
+              <svg class="md:ml-5 md:w-5 md:h-5 ml-2 w-3 h-3" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+
+            <div id="dropdown" class="z-10 bg-white rounded-xl absolute w-full sm:w-[500px] right-0 hidden">
+              <ul class="py-1 text-sm px-4">
+                <li>
+                  <a href="instagram link" class="flex items-center py-2 text-[#3481F0] border-b w-1/1 xl:w-1/2 mx-auto">
+                    <span>
+                      <img class="w-4 h-4 mr-3" src="./assets/imgs/igtv.svg" alt="person">
+                    </span>
+                    <span>Instagram IGTV</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="instagram reels" class="flex items-center py-2 text-[#3481F0] border-b w-1/1 xl:w-1/2 mx-auto">
+                    <span>
+                      <img class="w-4 h-4 mr-3" src="./assets/imgs/instagram-reels-icon.svg" alt="person">
+                    </span>
+                    <span>Instagram Reels</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="instagram dp" class="flex items-center py-2 text-[#3481F0] border-b w-1/1 xl:w-1/2 mx-auto">
+                    <span>
+                      <img class="w-4 h-4 mr-3" src="./assets/imgs/Icon-awesome-user.svg" alt="person">
+                    </span>
+                    <span>Instagram DP</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="instagram story" class="flex items-center py-2 text-[#3481F0] border-b w-1/1 xl:w-1/2 mx-auto">
+                    <span>
+                      <img class="w-4 h-4 mr-3" src="./assets/imgs/insta-story-icon.svg" alt="person">
+                    </span>
+                    <span>ISTAGRAM Story</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="instagram video" class="flex items-center py-2 text-[#3481F0] border-b w-1/1 xl:w-1/2 mx-auto">
+                    <span>
+                      <img class="w-4 h-4 mr-3" src="./assets/imgs/Icon-feather-play-circle.svg" alt="person">
+                    </span>
+                    <span>Instagram Video</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="instagram picture" class="flex items-center py-2 text-[#3481F0] border-b w-1/1 xl:w-1/2 mx-auto">
+                    <span>
+                      <img class="w-4 h-4 mr-3" src="./assets/imgs/insta-capture.svg" alt="person">
+                    </span>
+                    <span>Instagram Picture</span>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="2xl:ml-11 lg:ml-8 lg:inline-block block lg:w-auto w-full">
-              <button class="bg-[#FC4F1E] lg:w-auto w-full text-white py-3 md:py-4 xl:py-6 2xl:px-16 xl:px-12 lg:px-8 font-medium 2xl:text-[28px] xl:text-[24px] lg:text-[20px] rounded-xl ">Download</button>
-            </div>
+        </div>
+        <div class="2xl:ml-11 lg:ml-8 lg:inline-block block lg:w-auto w-full">
+          <button class="bg-[#FC4F1E] btn-shadow lg:w-auto w-full text-white py-3 md:py-4 xl:py-6 2xl:px-16 xl:px-12 lg:px-8 font-medium 2xl:text-[28px] xl:text-[24px] lg:text-[20px] rounded-xl ">Download</button>
+        </div>
+
+       
       </div>
     </div>
+  </div>
 </div>
 
 <div class=" w-full 2xl:pl-[134px] 2xl:pr-[137px] px-12 py-4 md:py-8 lg:py-14">
@@ -191,7 +203,7 @@
 </div>
 
 
-  <div class="hidden w-full max-w-screen-2xl mx-auto justify-between items-center flex-wrap text-[#FC4F1E] bg-white">
+  <div class="w-full max-w-screen-2xl mx-auto flex justify-between items-center flex-wrap text-[#FC4F1E] bg-white">
     <button class="w-1/2 md:w-1/4 inline-flex items-center justify-center text-[12px] lg:text-[18px] 2xl:text-[24px] font-medium py-4 lg:py-6 px-4  md:px-6 lg:px-8 xl:px-10 2xl:px-20" type="button">
       <span>
         <img class="w-[23px] h-[23px] mr-3 object-contain" src="./assets/imgs/Mask Group 1.png" alt="person">
@@ -221,6 +233,7 @@
   <div class="flex flex-col lg:flex-row gap-6 mt-10 md:mt-14 lg:mt-20 xl:mt-32 max-w-screen-2xl mx-auto justify-start px-24  lg:px-6">
     <div class="w-1/1 lg:w-1/4">
       <div class="text-center">
+        <p class="text-[18px] mb-4">Instagram Profile</p>
         <div class="mb-2 lg:mb-4">
           <img class="text-center mx-auto rounded-full" src="./assets//imgs/Ellipse 15.png" alt="Ellipse">
         </div>
@@ -248,82 +261,112 @@
             Download
           </button>
         </div>
+
+        <div class="btn-shadow w-full h-[510px] rounded-xl relative overflow-hidden shadow-lg mb-8 lg:mb-0">
+          <img class="w-full" src="./assets/imgs/Component 5 – 1.png" alt="Sunset in the mountains">
+          <button class=" w-full absolute bottom-0 bg-[#FC4F1E] text-center text-white py-3 lg:py-4 2xl:py-6 font-medium text-[16px] lg:text-[20px] xl:text-[28px] rounded-xl ">
+            Download
+          </button>
         </div>
+      </div>
+
+      <div class="lg:flex rounded mx-auto gap-7">
+
+        <div class="btn-shadow w-full h-[510px] rounded-xl relative overflow-hidden shadow-lg mb-8 lg:mb-0">
+          <img class="w-full" src="./assets/imgs/Component 5 – 1.png" alt="Sunset in the mountains">
+          <button class="w-full absolute bottom-0 bg-[#FC4F1E] text-center text-white py-3 lg:py-4 2xl:py-6 font-medium text-[16px] lg:text-[20px] xl:text-[28px] rounded-xl">
+            Download
+          </button>
+        </div>
+
+        <div class="btn-shadow w-full h-[510px] rounded-xl relative overflow-hidden shadow-lg mb-8 lg:mb-0">
+          <img class="w-full" src="./assets/imgs/Component 5 – 1.png" alt="Sunset in the mountains">
+          <button class="w-full absolute bottom-0 bg-[#FC4F1E] text-center text-white py-3 lg:py-4 2xl:py-6 font-medium text-[16px] lg:text-[20px] xl:text-[28px] rounded-xl">
+            Download
+          </button>
+        </div>
+
+        <div class="btn-shadow w-full h-full rounded relative overflow-hidden shadow-lg">
+          <img class="w-full" src="./assets/imgs/Component 5 – 1.png" alt="Sunset in the mountains">
+          <button class="w-full absolute bottom-0 bg-[#FC4F1E] text-center text-white py-3 lg:py-4 2xl:py-6 font-medium text-[16px] lg:text-[20px] xl:text-[28px] rounded-xl">
+            Download
+          </button>
+        </div>
+
       </div>
 
     </div>
   </div>
-
 
   <section class="text-gray-600 body-font">
     <div class="lg:container px-5 py-14 md:py-12 mx-auto flex flex-wrap items-center justify-between lg:flex-row flex-col">
       <div class="flex flex-wrap -mx-4 text-center lg:text-left mb-auto lg:w-1/2 content-start">
         <div class="w-full sm:p-4 px-4 md:mb-6">
           <div id="btn1" class="dynamic-section">
-            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">1. HOW TO DOWNLOAD INSTAGRAM
-              PROFILE , VIDEO , STORY ?</h1>
-            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">1. Find ways to copy links from various platforms below.</div>
-            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">1. The goal is to open the post you need to download and copy the URL.
+            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">HOW TO DOWNLOAD INSTAGRAM
+              PROFILE?</h1>
+            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">Find ways to copy links from various platforms below.</div>
+            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">The goal is to open the post you need to download and copy the URL.
                You can do it from the mobile app or in a browser. If you open
               the Instagram app, click on the three dots and choose the
               menu item Copy Link.</p>
           </div>
 
           <div id="btn2" class="dynamic-section hidden">
-            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">2. HOW TO DOWNLOAD INSTAGRAM
-              PROFILE , VIDEO , STORY ?</h1>
-            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">2. Find ways to copy links from various platforms below.</div>
-            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">2. The goal is to open the post you need to download and copy the URL.
+            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">HOW TO DOWNLOAD INSTAGRAM
+               PICTURE?</h1>
+            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">Find ways to copy links from various platforms below.</div>
+            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">The goal is to open the post you need to download and copy the URL.
               You can do it from the mobile app or in a browser. If you open
               the Instagram app, click on the three dots and choose the
               menu item Copy Link.</p>
           </div>
 
           <div id="btn3" class="dynamic-section hidden">
-            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">3. HOW TO DOWNLOAD INSTAGRAM
-              PROFILE , VIDEO , STORY ?</h1>
-            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">3. Find ways to copy links from various platforms below.</div>
-            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">3. The goal is to open the post you need to download and copy the URL.
+            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">HOW TO DOWNLOAD INSTAGRAM
+               VIDEO?</h1>
+            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">Find ways to copy links from various platforms below.</div>
+            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">The goal is to open the post you need to download and copy the URL.
               You can do it from the mobile app or in a browser. If you open
               the Instagram app, click on the three dots and choose the
               menu item Copy Link.</p>
           </div>
 
           <div id="btn4" class="dynamic-section hidden">
-            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">4. HOW TO DOWNLOAD INSTAGRAM
-              PROFILE , VIDEO , STORY ?</h1>
-            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">4. Find ways to copy links from various platforms below.</div>
-            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">4. The goal is to open the post you need to download and copy the URL.
+            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">HOW TO DOWNLOAD INSTAGRAM
+               STORY?</h1>
+            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">Find ways to copy links from various platforms below.</div>
+            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">The goal is to open the post you need to download and copy the URL.
               You can do it from the mobile app or in a browser. If you open
               the Instagram app, click on the three dots and choose the
               menu item Copy Link.</p>
           </div>
 
           <div id="btn5" class="dynamic-section hidden">
-            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">5. HOW TO DOWNLOAD INSTAGRAM
-              PROFILE , VIDEO , STORY ?</h1>
-            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">5. Find ways to copy links from various platforms below.</div>
-            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">5. The goal is to open the post you need to download and copy the URL.
+            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">HOW TO DOWNLOAD INSTAGRAM
+              DP?</h1>
+            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">Find ways to copy links from various platforms below.</div>
+            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">The goal is to open the post you need to download and copy the URL.
               You can do it from the mobile app or in a browser. If you open
               the Instagram app, click on the three dots and choose the
               menu item Copy Link.</p>
           </div>
 
           <div id="btn6" class="dynamic-section hidden">
-            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">6. HOW TO DOWNLOAD INSTAGRAM
-              PROFILE , VIDEO , STORY ?</h1>
-            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">6. Find ways to copy links from various platforms below.</div>
-            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">6. The goal is to open the post you need to download and copy the URL.
+            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">HOW TO DOWNLOAD INSTAGRAM
+              REELS?</h1>
+            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">Find ways to copy links from various platforms below.</div>
+            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">The goal is to open the post you need to download and copy the URL.
              You can do it from the mobile app or in a browser. If you open
               the Instagram app, click on the three dots and choose the
               menu item Copy Link.</p>
           </div>
 
           <div id="btn7" class="dynamic-section hidden">
-            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">7. HOW TO DOWNLOAD INSTAGRAM
-              PROFILE , VIDEO , STORY ?</h1>
-            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">7. Find ways to copy links from various platforms below.</div>
-            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">7.  The goal is to open the post you need to download and copy the URL.
+            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">HOW TO DOWNLOAD INSTAGRAM
+              IGTV?</h1>
+            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">Find ways to copy links from various platforms below.</div>
+            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">The goal is to open the post you need to download and copy the URL.
              You can do it from the mobile app or in a browser. If you open
               the Instagram app, click on the three dots and choose the
               menu item Copy Link.</p>
@@ -342,12 +385,12 @@
       </div>
       <div class="lg:w-1/2 rounded-lg overflow-hidden mt-6 sm:mt-0">
         <img id="img1" class="dynamic-img object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/Image 8.png" alt="stats">
-        <img id="img2" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/flow-3-img.png" alt="stats">
-        <img id="img3" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/flow-4-img.png" alt="stats">
-        <img id="img4" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/flow-6-img.png" alt="stats">
-        <img id="img5" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/flow-3-img-2.png" alt="stats">
-        <img id="img6" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/flow-4-img-3.png" alt="stats">
-        <img id="img7" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/flow-3-img-3.png" alt="stats">
+        <img id="img2" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/section-img-2.png" alt="stats">
+        <img id="img3" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/flow-3-img-2.png" alt="stats">
+        <img id="img4" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/flow-4-img-2.png" alt="stats">
+        <img id="img5" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/flow-5-img-2.png" alt="stats">
+        <img id="img6" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/flow-6-img-2.png" alt="stats">
+        <img id="img7" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/flow-7-img-2.png" alt="stats">
       </div>
     </div>
   </section>
@@ -355,7 +398,7 @@
   <section class="text-gray-600 body-font">
     <div class="lg:container px-5 py-14 md:py-12 mx-auto flex flex-wrap items-center justify-between lg:flex-row flex-col">
       <div class="lg:w-1/2 order-2 lg:order-1">
-        <img class="object-cover w-full" src="./assets/imgs/flow-5-img-2.png" alt="stats">
+        <img class="object-cover w-full" src="./assets/imgs/Group 411.png" alt="stats">
       </div>
       <div class="flex flex-wrap lg:order-2 -mx-4 mt-12 text-center lg:text-left mb-auto lg:w-1/2 content-start">
         <div class="w-full sm:p-4 px-4 md:mb-6">
@@ -377,7 +420,7 @@
         </div>
       </div>
       <div class="lg:w-1/2 rounded-lg overflow-hidden mt-6 sm:mt-0">
-        <img class="object-cover w-full" src="./assets/imgs/flow-5-img-3.png" alt="stats">
+        <img class="object-cover w-full" src="./assets/imgs/Group 412.png" alt="stats">
       </div>
     </div>
   </section>

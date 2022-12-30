@@ -16,7 +16,7 @@
 </head>
 <body class=" bg-[#f6f6f6]">
   <div class="relative">
-      <img class="w-[100px] mx-auto py-3" src="./assets/imgs/ig-logo-top.jpg" alt="brand">
+      <img class="w-[100px] mx-auto py-3" src="./assets/imgs/logo.png" alt="brand">
   </div>
 
   <nav class="bg-[#FC4F1E] py-5 md:py-0 relative">
@@ -35,8 +35,17 @@
           <li>
             <a href="./blog.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">ABOUT US</a>
           </li>
-          <li>
+          <li class="relative group ">
             <a href="./blog.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">TOOLS</a>
+
+            <div class="dropdown absolute left-0 group-hover:flex flex-col gap-3 w-[250px] p-2 bg-[#FC4F1E] z-[1000] hidden">
+              <a href="picture.html">Instagram Picture</a>
+              <a href="video.html">Instagram Video</a>
+              <a href="story.html">Insagram Story</a>
+              <a href="dp.html">Instagram DP</a>
+              <a href="reels.html">Instagram Reels</a>
+              <a href="igtv.html">Instagram IGTV</a>
+            </div>
           </li>
           <li>
             <a href="./blog.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">CONTACT US</a>
@@ -97,7 +106,7 @@
 
   <div>
     <div class="hidden relative md:grid grid-cols-4 max-h-[740px] 2xl:min-h-[771px] xl:min-h-[550px] md:min-h-[400px]">
-      <div class="flex items-center 2xl:justify-start justify-center 2xl:pt-[253px] flex-col relative">
+      <a href="profile.html" class="flex items-center 2xl:justify-start justify-center 2xl:pt-[253px] flex-col relative">
         <div class="absolute top-0 left-0 right-0 bottom-0 z-10 after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-60 hover:after:opacity-30 cursor-pointer">
           <img src="./assets/imgs/header-backgroud.png" alt="header-backgroud" class="max-h-full inline-block w-full h-full object-cover">
         </div>
@@ -107,9 +116,9 @@
           </div>
           <p class="xl:text-[30px] md:text-[24px] text-center font-medium">Profile</p>
         </div>
-      </div>
+      </a>
 
-      <div class="flex items-center 2xl:justify-start justify-center 2xl:pt-[253px] flex-col relative">
+      <a href="picture.html" class="flex items-center 2xl:justify-start justify-center 2xl:pt-[253px] flex-col relative">
         <div class="absolute top-0 left-0 right-0 bottom-0 z-10 after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-60 hover:after:opacity-30 cursor-pointer">
           <img src="./assets/imgs/header-backgroud.png" alt="header-backgroud" class="max-h-full inline-block w-full h-full object-cover">
         </div>
@@ -119,9 +128,9 @@
           </div>
           <p class="xl:text-[30px] md:text-[24px] text-center font-medium">Picture</p>
         </div>
-      </div>
+      </a>
 
-      <div class="flex items-center 2xl:justify-start justify-center 2xl:pt-[253px] flex-col relative">
+      <a href="video.html" class="flex items-center 2xl:justify-start justify-center 2xl:pt-[253px] flex-col relative">
         <div class="absolute top-0 left-0 right-0 bottom-0 z-10 after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-60 hover:after:opacity-30 cursor-pointer">
           <img src="./assets/imgs/header-backgroud.png" alt="header-backgroud" class="max-h-full inline-block w-full h-full object-cover">
         </div>
@@ -131,9 +140,9 @@
           </div>
           <p class="xl:text-[30px] md:text-[24px] text-center font-medium">Video</p>
         </div>
-      </div>
+      </a>
 
-      <div class="flex items-center 2xl:justify-start justify-center  2xl:pt-[253px] flex-col relative">
+      <a href="story.html" class="flex items-center 2xl:justify-start justify-center  2xl:pt-[253px] flex-col relative">
         <div class="absolute top-0 left-0 right-0 bottom-0 z-10 after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-60 hover:after:opacity-30 cursor-pointer">
           <img src="./assets/imgs/header-backgroud.png" alt="header-backgroud" class="max-h-full inline-block w-full h-full object-cover">
         </div>
@@ -143,7 +152,7 @@
           </div>
           <p class="xl:text-[30px] md:text-[24px] text-center font-medium">Story</p>
         </div>
-      </div>
+      </a>
 
 
       <div class="absolute lg:bottom-5 bottom-0 w-full 2xl:pl-[134px] 2xl:pr-[137px] px-12 z-50">
@@ -223,7 +232,7 @@
 
           </div>
           <div class="2xl:ml-11 lg:ml-8 lg:inline-block block lg:w-auto w-full">
-            <button class="bg-[#FC4F1E] lg:w-auto w-full text-white py-4 xl:py-6 2xl:px-16 xl:px-12 lg:px-8 font-medium 2xl:text-[28px] xl:text-[24px] lg:text-[20px] rounded-xl border-b">Download</button>
+            <button class="download-btn bg-[#FC4F1E] btn-shadow lg:w-auto w-full text-white py-3 md:py-4 xl:py-6 2xl:px-16 xl:px-12 lg:px-8 font-medium 2xl:text-[28px] xl:text-[24px] lg:text-[20px] rounded-xl ">Download</button>
           </div>
         </div>
       </div>
@@ -337,7 +346,7 @@
               </div>
             </div>
             <div class="2xl:ml-11 lg:ml-8 lg:inline-block block lg:w-auto w-full">
-              <button class="bg-[#FC4F1E] lg:w-auto w-full text-white py-3 md:py-4 xl:py-6 2xl:px-16 xl:px-12 lg:px-8 font-medium 2xl:text-[28px] xl:text-[24px] lg:text-[20px] rounded-xl ">Download</button>
+              <button class="bg-[#FC4F1E] btn-shadow lg:w-auto w-full text-white py-3 md:py-4 xl:py-6 2xl:px-16 xl:px-12 lg:px-8 font-medium 2xl:text-[28px] xl:text-[24px] lg:text-[20px] rounded-xl ">Download</button>
             </div>
       </div>
     </div>
@@ -353,70 +362,70 @@
       <div class="flex flex-wrap -mx-4 text-center lg:text-left mb-auto lg:w-1/2 content-start">
         <div class="w-full sm:p-4 px-4 md:mb-6">
           <div id="btn1" class="dynamic-section">
-            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">1. HOW TO DOWNLOAD INSTAGRAM
-              PROFILE , VIDEO , STORY ?</h1>
-            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">1. Find ways to copy links from various platforms below.</div>
-            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">1. The goal is to open the post you need to download and copy the URL.
+            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">HOW TO DOWNLOAD INSTAGRAM
+              PROFILE?</h1>
+            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">Find ways to copy links from various platforms below.</div>
+            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">The goal is to open the post you need to download and copy the URL.
                You can do it from the mobile app or in a browser. If you open
               the Instagram app, click on the three dots and choose the
               menu item Copy Link.</p>
           </div>
 
           <div id="btn2" class="dynamic-section hidden">
-            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">2. HOW TO DOWNLOAD INSTAGRAM
-              PROFILE , VIDEO , STORY ?</h1>
-            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">2. Find ways to copy links from various platforms below.</div>
-            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">2. The goal is to open the post you need to download and copy the URL.
+            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">HOW TO DOWNLOAD INSTAGRAM
+               PICTURE?</h1>
+            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">Find ways to copy links from various platforms below.</div>
+            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">The goal is to open the post you need to download and copy the URL.
               You can do it from the mobile app or in a browser. If you open
               the Instagram app, click on the three dots and choose the
               menu item Copy Link.</p>
           </div>
 
           <div id="btn3" class="dynamic-section hidden">
-            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">3. HOW TO DOWNLOAD INSTAGRAM
-              PROFILE , VIDEO , STORY ?</h1>
-            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">3. Find ways to copy links from various platforms below.</div>
-            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">3. The goal is to open the post you need to download and copy the URL.
+            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">HOW TO DOWNLOAD INSTAGRAM
+               VIDEO?</h1>
+            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">Find ways to copy links from various platforms below.</div>
+            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">The goal is to open the post you need to download and copy the URL.
               You can do it from the mobile app or in a browser. If you open
               the Instagram app, click on the three dots and choose the
               menu item Copy Link.</p>
           </div>
 
           <div id="btn4" class="dynamic-section hidden">
-            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">4. HOW TO DOWNLOAD INSTAGRAM
-              PROFILE , VIDEO , STORY ?</h1>
-            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">4. Find ways to copy links from various platforms below.</div>
-            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">4. The goal is to open the post you need to download and copy the URL.
+            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">HOW TO DOWNLOAD INSTAGRAM
+               STORY?</h1>
+            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">Find ways to copy links from various platforms below.</div>
+            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">The goal is to open the post you need to download and copy the URL.
               You can do it from the mobile app or in a browser. If you open
               the Instagram app, click on the three dots and choose the
               menu item Copy Link.</p>
           </div>
 
           <div id="btn5" class="dynamic-section hidden">
-            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">5. HOW TO DOWNLOAD INSTAGRAM
-              PROFILE , VIDEO , STORY ?</h1>
-            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">5. Find ways to copy links from various platforms below.</div>
-            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">5. The goal is to open the post you need to download and copy the URL.
+            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">HOW TO DOWNLOAD INSTAGRAM
+              DP?</h1>
+            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">Find ways to copy links from various platforms below.</div>
+            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">The goal is to open the post you need to download and copy the URL.
               You can do it from the mobile app or in a browser. If you open
               the Instagram app, click on the three dots and choose the
               menu item Copy Link.</p>
           </div>
 
           <div id="btn6" class="dynamic-section hidden">
-            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">6. HOW TO DOWNLOAD INSTAGRAM
-              PROFILE , VIDEO , STORY ?</h1>
-            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">6. Find ways to copy links from various platforms below.</div>
-            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">6. The goal is to open the post you need to download and copy the URL.
+            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">HOW TO DOWNLOAD INSTAGRAM
+              REELS?</h1>
+            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">Find ways to copy links from various platforms below.</div>
+            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">The goal is to open the post you need to download and copy the URL.
              You can do it from the mobile app or in a browser. If you open
               the Instagram app, click on the three dots and choose the
               menu item Copy Link.</p>
           </div>
 
           <div id="btn7" class="dynamic-section hidden">
-            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">7. HOW TO DOWNLOAD INSTAGRAM
-              PROFILE , VIDEO , STORY ?</h1>
-            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">7. Find ways to copy links from various platforms below.</div>
-            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">7.  The goal is to open the post you need to download and copy the URL.
+            <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-black">HOW TO DOWNLOAD INSTAGRAM
+              IGTV?</h1>
+            <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium text-black">Find ways to copy links from various platforms below.</div>
+            <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">The goal is to open the post you need to download and copy the URL.
              You can do it from the mobile app or in a browser. If you open
               the Instagram app, click on the three dots and choose the
               menu item Copy Link.</p>
@@ -435,16 +444,15 @@
       </div>
       <div class="lg:w-1/2 rounded-lg overflow-hidden mt-6 sm:mt-0">
         <img id="img1" class="dynamic-img object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/Image 8.png" alt="stats">
-        <img id="img2" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/flow-3-img.png" alt="stats">
-        <img id="img3" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/flow-4-img.png" alt="stats">
-        <img id="img4" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/flow-6-img.png" alt="stats">
-        <img id="img5" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/flow-3-img-2.png" alt="stats">
-        <img id="img6" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/flow-4-img-3.png" alt="stats">
-        <img id="img7" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/flow-3-img-3.png" alt="stats">
+        <img id="img2" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/section-img-2.png" alt="stats">
+        <img id="img3" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/flow-3-img-2.png" alt="stats">
+        <img id="img4" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/flow-4-img-2.png" alt="stats">
+        <img id="img5" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/flow-5-img-2.png" alt="stats">
+        <img id="img6" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/flow-6-img-2.png" alt="stats">
+        <img id="img7" class="dynamic-img hidden object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/flow-7-img-2.png" alt="stats">
       </div>
     </div>
   </section>
-
 
   <section class="text-gray-600 body-font">
     <div class="lg:container px-5 py-14 md:py-12 mx-auto flex flex-wrap items-center justify-between lg:flex-row flex-col">
@@ -799,14 +807,14 @@
   <footer class="p-7 xl:pl-[150px] xl:pr-[164px] px-5 lg:pt-[90px] md:pt-[60px] pt-[28px] bg-white">
     <div class="mx-auto max-w-[1600px]">
         <div class="md:flex md:justify-between">
-            <div class="mb-6 md:mb-0 max-w-[500px] md:block hidden">
-                <a href="#" class="flex items-center mb-8">
+            <div class="mb-6 md:mb-0 max-w-[500px] block md:text-left text-center">
+                <a href="#" class="flex items-center mb-8 md:justify-start justify-center">
                     <span class="self-center text-2xl font-semibold whitespace-nowrap "> <img src="./assets/imgs/ig-logo-top.jpg" alt="" class="w-28"> </span>
                 </a>
                 <p class="mb-16">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores</p>
                 <p class="mb-4 font-bold">Any questions?</p>
                 <a href="mailto:instadownloader@mail.com">
-                  <span class="flex items-center">
+                  <span class="flex items-center md:justify-start justify-center">
                     <img class="inline-block mr-2 max-w-[20px]" src="./assets/imgs/Icon feather-mail.png" alt="mailto">
                     <span>instadownloader@mail.com</span>
                   </span>
@@ -875,14 +883,14 @@
         </div>
 
         <div class="mt-8 md:hidden text-center">
-          <h3 class="font-medium text-[16px] mb-2">NEED ANY HELP?</h1>
+          <!-- <h3 class="font-medium text-[16px] mb-2">NEED ANY HELP?</h1>
             <div class="relative mb-8 w-full">
               <input type="search" id="search" class="w-full outline-none bg-gray-200 py-2 px-7 rounded-full text-[12px]" value="instadownloader@mail.com">
               <button class="text-[12px] absolute z-10 right-0 top-0 bg-[#FC4F1E] inline-block text-white py-2 px-8 rounded-full ">SEND</button>
             </div>
 
             <div class="text-[17px] font-medium mb-3">INSTAGRAM LOGO</div>
-            <p class="text-[14px]">Copyright 2018</p>
+            <p class="text-[14px]">Copyright 2018</p> -->
 
         </div>
     </div>
@@ -890,7 +898,7 @@
 
 <div class="relative bg-[#303030]">
   <div class="mx-auto py-4 px-3 sm:px-6 lg:px-8">
-      <p class="text-[16px] lg:text-[21px] text-white text-center md:block hidden capitalize">
+      <p class="text-[16px] lg:text-[21px] text-white text-center md:block capitalize">
         all instagram tm logos and trademarks displayed on this application are property of instagram.
         <span class="ml-2">
           © Copyright 2018  downloader.co

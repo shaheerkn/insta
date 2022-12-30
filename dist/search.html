@@ -26,32 +26,44 @@
   <nav class="bg-[#FC4F1E] py-5 md:py-0 relative">
     <div class="flex flex-wrap items-center justify-center mx-auto">
       <div class="items-center justify-between w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
-        <ul class="hidden md:flex items-center flex-col md:py-4  lg:py-8 rounded-lg text-white md:flex-row xl:space-x-20 lg:md:space-x-12 md:md:space-x-6  xl:text-[25px] lg:text-[20px] md:text-[18px]">
+        <button class="md:hidden ml-5 mobile-menu">
+          <img src="./assets/imgs/hamburger.png">
+        </button>
+        <ul class="hidden md:flex items-center flex-col md:py-4  lg:py-6 rounded-lg text-white md:flex-row xl:space-x-20 lg:md:space-x-12 md:md:space-x-6  xl:text-[22px] lg:text-[20px] md:text-[18px]">
           <li class="relative">
             <a href="#" class="block pl-3 pr-4 rounded md:bg-transparent py-2 pb-3 md:p-0 after:absolute after:content after:w-full after:h-1 after:left-0 after:-bottom-2 after:bg-white" aria-current="page">HOME</a>
           </li>
           <li>
-            <a href="./blog.html" class="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">BLOGS</a>
+            <a href="./blog.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">BLOGS</a>
           </li>
           <li>
-            <a href="./blog.html" class="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">ABOUT US</a>
+            <a href="./blog.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">ABOUT US</a>
+          </li>
+          <li class="relative group ">
+            <a href="./blog.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">TOOLS</a>
+
+            <div class="dropdown absolute left-0 group-hover:flex flex-col gap-3 w-[250px] p-2 bg-[#FC4F1E] z-[1000] hidden">
+              <a href="picture.html">Instagram Picture</a>
+              <a href="video.html">Instagram Video</a>
+              <a href="story.html">Insagram Story</a>
+              <a href="dp.html">Instagram DP</a>
+              <a href="reels.html">Instagram Reels</a>
+              <a href="igtv.html">Instagram IGTV</a>
+            </div>
           </li>
           <li>
-            <a href="./blog.html" class="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">TOOLS</a>
-          </li>
-          <li>
-            <a href="./blog.html" class="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">CONTACT US</a>
+            <a href="./blog.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">CONTACT US</a>
           </li>
           <li class="text-black relative navSearchWrapper">
-            <input type="text" class="h-auto m-0 py-2 px-4 focus:outline-none text-[18px] outline-none border-none rounded-full opacity-0">
-            <button type="submit">
-              <img src="./assets/imgs/Group 185.png" alt="search-icon" class=" absolute right-[20px] top-[5px] rounded-full z-10 p-2 navSearch bg-white">
+            <input type="text" class="h-auto m-0 py-2 px-4 focus:outline-none text-[18px] outline-none border-none rounded-full opacity-0" placeholder="jot something">
+            <button type="submit" class="absolute right-[20px] top-[5px] bg-white rounded-full z-10 p-2">
+              <img src="./assets/imgs/Group 185.png" alt="search-icon" class= "navSearch ">
             </button>
           </li>
         </ul>
       </div>
     </div>
-
+    
     <div class="md:hidden mobile-navbar w-60 absolute pt-6 bg-white pr-4 pb-8 z-[1000] transition-all -left-60 top-0">
       <button class="close-navbar absolute left-3 top-7"><img src="./assets/imgs/back-arrow.png" alt="" class=""></button>
       <h4 class="pl-[46px] text-[15px] text-[#FC4F1E]">Instagram Logo</h4>
@@ -95,7 +107,6 @@
     </div>
     </div>
   </nav>
-
   <div class="max-w-[1350px] py-[50px] md:py-[80px] lg:py-[100px] mx-auto text-md px-8">
     <p class="mb-4 md:mb-8 lg:mb-12 text-[16px] md:text-[20px] lg:text-[25px]">Total results:
       <span>23</span>
