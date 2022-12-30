@@ -128,3 +128,27 @@ if (sectionBtn && dynamicSection && dynamicimg) {
     });
   });
 }
+
+let tabs = document.querySelectorAll(".tabs");
+let tabsCard = document.querySelectorAll(".tabs-card");
+
+if (tabs && tabsCard) {
+  function hideCards() {
+    for (let i = 0; i < tabsCard.length; i++) {
+      tabsCard[i]?.classList.add("hidden");
+      tabs[i]?.classList.remove("bg-[#F6F6F6]");
+    }
+  }
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      hideCards();
+      tab.classList.add("bg-[#F6F6F6]");
+      for (let i = 0; i < tabsCard.length; i++) {
+        if (tabsCard[i].classList.contains(tab.getAttribute("for"))) {
+          tabsCard[i].classList.remove("hidden");
+        }
+      }
+    });
+  });
+}

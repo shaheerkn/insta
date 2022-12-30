@@ -1,524 +1,990 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-  <title>Tailwind</title>
-</head>
-<body class="bg-[#f6f6f6]">
-  <div class="relative">
-    <img class="w-[100px] mx-auto py-3" src="./assets/imgs/ig-logo-top.jpg" alt="brand">
-</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tailwind</title>
+  </head>
+  <body class="bg-[#f6f6f6]">
+    <div class="relative">
+      <img
+        class="w-[100px] mx-auto py-3"
+        src="./assets/imgs/ig-logo-top.jpg"
+        alt="brand"
+      />
+    </div>
 
-<nav class="bg-[#FC4F1E] py-5 md:py-0 relative">
-  <div class="flex flex-wrap items-center justify-center mx-auto">
-    <div class="items-center justify-between w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
-      <button class="md:hidden ml-5 mobile-menu">
-        <img src="./assets/imgs/hamburger.png">
-      </button>
-      <ul class="hidden md:flex items-center flex-col md:py-4  lg:py-6 rounded-lg text-white md:flex-row xl:space-x-20 lg:md:space-x-12 md:md:space-x-6  xl:text-[22px] lg:text-[20px] md:text-[18px]">
-        <li>
-          <a href="#" class="block pl-3 pr-4 rounded md:bg-transparent py-2 pb-3 md:p-0" aria-current="page">HOME</a>
-        </li>
-        <li class="relative">
-          <a href="./blog.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0  after:absolute after:content after:w-full after:h-1 after:left-0 after:-bottom-2 after:bg-white">BLOGS</a>
-        </li>
-        <li>
-          <a href="./blog.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">ABOUT US</a>
-        </li>
-        <li class="relative group ">
-          <a href="./blog.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">TOOLS</a>
-
-          <div class="dropdown absolute left-0 group-hover:flex flex-col gap-3 w-[250px] p-2 bg-[#FC4F1E] z-[1000] hidden">
-            <a href="picture.html">Instagram Picture</a>
-            <a href="video.html">Instagram Video</a>
-            <a href="story.html">Insagram Story</a>
-            <a href="dp.html">Instagram DP</a>
-            <a href="reels.html">Instagram Reels</a>
-            <a href="igtv.html">Instagram IGTV</a>
-          </div>
-        </li>
-        <li>
-          <a href="./blog.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">CONTACT US</a>
-        </li>
-        <li class="text-black relative navSearchWrapper">
-          <input type="text" class="h-auto m-0 py-2 px-4 focus:outline-none text-[18px] outline-none border-none rounded-full opacity-0" placeholder="jot something">
-          <button type="submit" class="absolute right-[20px] top-[5px] bg-white rounded-full z-10 p-2">
-            <img src="./assets/imgs/Group 185.png" alt="search-icon" class= "navSearch ">
+    <nav class="bg-[#FC4F1E] py-5 md:py-0 relative">
+      <div class="flex flex-wrap items-center justify-center mx-auto">
+        <div
+          class="items-center justify-between w-full md:flex md:w-auto md:order-1"
+          id="mobile-menu-2"
+        >
+          <button class="md:hidden ml-5 mobile-menu">
+            <img src="./assets/imgs/hamburger.png" />
           </button>
+          <ul
+            class="hidden md:flex items-center flex-col md:py-4 lg:py-6 rounded-lg text-white md:flex-row xl:space-x-20 lg:md:space-x-12 md:md:space-x-6 xl:text-[22px] lg:text-[20px] md:text-[18px]"
+          >
+            <li>
+              <a
+                href="#"
+                class="block pl-3 pr-4 rounded md:bg-transparent py-2 pb-3 md:p-0"
+                aria-current="page"
+                >HOME</a
+              >
+            </li>
+            <li class="relative">
+              <a
+                href="./blog.html"
+                class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 after:absolute after:content after:w-full after:h-1 after:left-0 after:-bottom-2 after:bg-white"
+                >BLOGS</a
+              >
+            </li>
+            <li>
+              <a
+                href="./blog.html"
+                class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0"
+                >ABOUT US</a
+              >
+            </li>
+            <li class="relative group">
+              <a
+                href="./blog.html"
+                class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0"
+                >TOOLS</a
+              >
+
+              <div
+                class="dropdown absolute left-0 group-hover:flex flex-col gap-3 w-[250px] p-2 bg-[#FC4F1E] z-[1000] hidden"
+              >
+                <a href="picture.html">Instagram Picture</a>
+                <a href="video.html">Instagram Video</a>
+                <a href="story.html">Insagram Story</a>
+                <a href="dp.html">Instagram DP</a>
+                <a href="reels.html">Instagram Reels</a>
+                <a href="igtv.html">Instagram IGTV</a>
+              </div>
+            </li>
+            <li>
+              <a
+                href="./blog.html"
+                class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0"
+                >CONTACT US</a
+              >
+            </li>
+            <li class="text-black relative navSearchWrapper">
+              <input
+                type="text"
+                class="h-auto m-0 py-2 px-4 focus:outline-none text-[18px] outline-none border-none rounded-full opacity-0"
+                placeholder="jot something"
+              />
+              <button
+                type="submit"
+                class="absolute right-[20px] top-[5px] bg-white rounded-full z-10 p-2"
+              >
+                <img
+                  src="./assets/imgs/Group 185.png"
+                  alt="search-icon"
+                  class="navSearch"
+                />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="md:hidden mobile-navbar w-60 absolute pt-6 bg-white pr-4 pb-8 z-[1000] transition-all -left-60 top-0"
+      >
+        <button class="close-navbar absolute left-3 top-7">
+          <img src="./assets/imgs/back-arrow.png" alt="" class="" />
+        </button>
+        <h4 class="pl-[46px] text-[15px] text-[#FC4F1E]">Instagram Logo</h4>
+        <ul class="pl-[46px] flex flex-col gap-6 mt-8">
+          <li>
+            <a href="#" class="text-[11px] text-[#FC4F1E]">HOME</a>
+          </li>
+          <li>
+            <a href="./blog.html" class="text-[11px]">BLOGS</a>
+          </li>
+          <li>
+            <a href="./blog.html" class="text-[11px]">CONTACT US</a>
+          </li>
+          <li>
+            <a href="./blog.html" class="text-[11px]">ABOUT US</a>
+          </li>
+          <li>
+            <a href="./blog.html" class="text-[11px]">TOOLS</a>
+          </li>
+        </ul>
+        <form class="text-center mt-[43px] pl-[13px]">
+          <label for="" class="text-[14px]"> NEED ANY HELP?</label>
+          <div class="flex relative h-[43px] mt-[10px]">
+            <input
+              type="text"
+              class="bg-[#E9E9E9] rounded-full w-full h-[30px] text-[7px] pl-[13px]"
+              placeholder="instadownloader@mail.com"
+            />
+            <button
+              class="bg-[#FC4F1E] rounded-full text-white px-6 h-[30px] absolute right-0 font-semibold"
+            >
+              SEND
+            </button>
+          </div>
+        </form>
+
+        <div class="flex mt-4 gap-8 justify-center sm:mt-6">
+          <a
+            href="#"
+            class="bg-[#FC4F1E] text-white border border-[#FC4F1E] rounded-full p-1"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+
+          <a
+            href="#"
+            class="bg-[#FC4F1E] text-white border border-[#FC4F1E] rounded-full p-1"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+              ></path>
+            </svg>
+          </a>
+
+          <a
+            href="#"
+            class="bg-[#FC4F1E] text-white border border-[#FC4F1E] rounded-full p-1"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="relative flex justify-center items-center max-h-[740px] 2xl:min-h-[740px] xl:min-h-[550px] min-h-[480px]"
+    >
+      <div
+        class="absolute top-0 left-0 right-0 bottom-0 z-10 after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-40"
+      >
+        <img
+          src="./assets/imgs/blog-hero.png"
+          alt="header-backgroud"
+          class="max-h-full inline-block w-full h-full object-cover z-0"
+        />
+      </div>
+
+      <div class="max-w-[1280px] relative z-50 text-white text-center px-8">
+        <h1
+          class="font-bold text-[24px] md:text-[40px] lg:text-[60px] text-[#FC4F1E] mb-6 lg:mb-12"
+        >
+          BLOG BY CATEGORY ARTICLE
+        </h1>
+        <p class="text-[14px] md:text-[20px] lg:text-[30px]">
+          Our experts on Instagram promotion will publish here: tips and
+          practical recommendations on how to become popular, secrets of
+          promotion, useful information only. Read our articles and you will
+          always be up to date with the latest news and global Instagram trends.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="max-w-screen-2xl mx-auto pt-[50px] md:pt-[100px] lg:pt-[150px] px-6"
+    >
+      <ul class="flex items-center space-x-6 mb-10">
+        <li class="text-[20px]">
+          <a href="#">All</a>
+        </li>
+        <li class="text-[20px]">
+          <a href="#">News</a>
+        </li>
+        <li
+          class="text-[20px] font-medium relative after:absolute after:content after:w-full after:h-[3px] after:left-0 after:-bottom-1 after:bg-[#FC4F1E]"
+        >
+          <a href="#">Articles</a>
         </li>
       </ul>
-    </div>
-  </div>
-  
-  <div class="md:hidden mobile-navbar w-60 absolute pt-6 bg-white pr-4 pb-8 z-[1000] transition-all -left-60 top-0">
-    <button class="close-navbar absolute left-3 top-7"><img src="./assets/imgs/back-arrow.png" alt="" class=""></button>
-    <h4 class="pl-[46px] text-[15px] text-[#FC4F1E]">Instagram Logo</h4>
-    <ul class="pl-[46px] flex flex-col gap-6 mt-8">
-      <li>
-        <a href="#" class="text-[11px] text-[#FC4F1E]">HOME</a>
-      </li>
-      <li>
-        <a href="./blog.html" class="text-[11px]">BLOGS</a>
-      </li>
-      <li>
-        <a href="./blog.html" class="text-[11px]">CONTACT US</a>
-      </li>
-      <li>
-        <a href="./blog.html" class="text-[11px]">ABOUT US</a>
-      </li>
-      <li>
-        <a href="./blog.html" class=" text-[11px]">TOOLS</a>
-      </li>
-    </ul>
-    <form class="text-center mt-[43px] pl-[13px]">
-      <label for="" class="text-[14px]"> NEED ANY HELP?</label>
-      <div class="flex relative h-[43px] mt-[10px]">
-        <input type="text" class="bg-[#E9E9E9] rounded-full w-full h-[30px] text-[7px] pl-[13px]" placeholder="instadownloader@mail.com">
-        <button class="bg-[#FC4F1E] rounded-full text-white px-6 h-[30px] absolute right-0 font-semibold">SEND</button>
-      </div>
-    </form>
 
-    <div class="flex mt-4 gap-8 justify-center sm:mt-6">
-      <a href="#" class="bg-[#FC4F1E] text-white  border border-[#FC4F1E] rounded-full p-1">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path></svg>
-        </a>
+      <div class="flex flex-col lg:flex-row gap-16 relative">
+        <div class="w-1/1 lg:w-[60%] 2xl:w-full">
+          <div
+            class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white h-full"
+          >
+            <div class="relative p-3 rounded-xl">
+              <div class="flex-shrink-0 relative">
+                <img
+                  class="w-full object-cover rounded-xl"
+                  src="./assets/imgs/Rectangle.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col justify-between p-6 text-left">
+              <div class="flex-1 max-w-[900px]">
+                <p class="text-[16px] lg:text-[26px]">
+                  JULY 13, 2022
+                  <span
+                    class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[10px] md:text-[16px] ml-4 font-bold"
+                    >ARTICLE</span
+                  >
+                </p>
 
-      <a href="#" class="bg-[#FC4F1E] text-white  border border-[#FC4F1E] rounded-full p-1">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
-      </a>
+                <p
+                  class="text-[16px] md:text-[24px] lg:text-[30px] xl:text-[40px] mt-4 lg:mt-6 font-medium text-gray-900"
+                >
+                  What is the Best Time to Post Reels on Instagram to Boost the
+                  Audience?
+                </p>
 
-      <a href="#" class="bg-[#FC4F1E] text-white border border-[#FC4F1E] rounded-full p-1">
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg>
-    </a>
-  </div>
-  </div>
-</nav>
+                <p
+                  class="mt-3 lg:mt-5 text-[14px] lg:text-[18px] text-gray-500"
+                >
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                  sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
 
-  <div class="relative flex justify-center items-center max-h-[740px] 2xl:min-h-[740px] xl:min-h-[550px] min-h-[480px]">
-    <div class="absolute top-0 left-0 right-0 bottom-0 z-10 after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-40 ">
-      <img src="./assets/imgs/blog-hero.png" alt="header-backgroud" class="max-h-full inline-block w-full h-full object-cover z-0 ">
-    </div>
-
-    <div class="max-w-[1280px] relative z-50 text-white text-center px-8">
-      <h1 class="font-bold text-[24px] md:text-[40px] lg:text-[60px]  text-[#FC4F1E] mb-6 lg:mb-12">BLOG BY CATEGORY ARTICLE</h1>
-      <p class="text-[14px] md:text-[20px] lg:text-[30px]">Our experts on Instagram promotion will publish here: tips and practical recommendations on how to become popular, secrets of promotion, useful information only. Read our articles and you will always be up to date with the latest news and global Instagram trends.</p>
-    </div>
-  </div>
-
-  <div class="max-w-screen-2xl mx-auto pt-[50px] md:pt-[100px] lg:pt-[150px] px-6">
-    <ul class="flex items-center space-x-6 mb-10">
-      <li class="text-[20px]">
-        <a href="#">All</a>
-      </li>
-      <li class="text-[20px]">
-        <a href="#">News</a>
-      </li>
-      <li class="text-[20px] font-medium relative after:absolute after:content after:w-full after:h-[3px] after:left-0 after:-bottom-1 after:bg-[#FC4F1E]">
-        <a href="#">Articles</a>
-      </li>
-    </ul>
-
-    <div class="flex flex-col lg:flex-row gap-16 relative">
-      <div class="w-1/1 lg:w-[60%] 2xl:w-full">
-        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white h-full">
-          <div class="relative p-3 rounded-xl">
-            <div class="flex-shrink-0 relative">
-              <img class="w-full object-cover rounded-xl" src="./assets/imgs/Rectangle.png" alt="">
+                <div
+                  class="flex items-center flex-shrink-0 my-4 md:my-8 lg:my-10"
+                >
+                  <a href="#">
+                    <img
+                      class="h-[30px] lg:h-[50px] w-[30px] lg:w-[50px] inline rounded-full"
+                      src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      alt=""
+                    />
+                  </a>
+                  <span
+                    class="inline ml-3 text-[14px] lg:text-[20px] font-medium"
+                    >Brenna Goyette</span
+                  >
+                </div>
+              </div>
             </div>
           </div>
-          <div class="flex flex-1 flex-col justify-between p-6 text-left">
-            <div class="flex-1 max-w-[900px]">
-              <p class="text-[16px] lg:text-[26px]">
-                JULY 13, 2022
-                <span class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[10px] md:text-[16px] ml-4 font-bold">ARTICLE</span></p>
-  
-              <p class="text-[16px] md:text-[24px] lg:text-[30px] xl:text-[40px] mt-4 lg:mt-6 font-medium text-gray-900">What is the Best Time to Post Reels on Instagram to Boost the Audience?</p>
-  
-              <p class="mt-3 lg:mt-5 text-[14px] lg:text-[18px] text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
-  
-              <div class=" flex items-center flex-shrink-0 my-4 md:my-8 lg:my-10">
-                <a href="#">
-                  <img class="h-[30px] lg:h-[50px] w-[30px] lg:w-[50px] inline rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                </a>
-                <span class="inline ml-3 text-[14px] lg:text-[20px] font-medium">Brenna Goyette</span>
+        </div>
+
+        <div class="w-1/1 lg:w-1/3 2xl:w-1/2">
+          <div
+            class="md:flex lg:block gap-0 md:gap-4 lg:gap-0 lg:max-w-[400px] lg:ml-auto"
+          >
+            <div
+              class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white mb-8 md:mb-0 lg:mb-8"
+            >
+              <div class="relative p-5">
+                <div class="flex-shrink-0">
+                  <img
+                    class="w-full min-h-[250px] object-cover rounded-xl"
+                    src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                class="flex flex-1 flex-col justify-between px-6 pb-7 text-left"
+              >
+                <div class="flex-1">
+                  <p class="text-[16px] lg:text-[23px]">
+                    JULY 13, 2022
+                    <span
+                      class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[13px] lg:text-[15px] ml-4 font-bold"
+                      >ARTICLE</span
+                    >
+                  </p>
+                  <p
+                    class="text-[16px] lg:text-[24px] mt-4 lg:mt-6 font-medium text-gray-900"
+                  >
+                    Instagram PFP guide 2022: best size, ideas & tools
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white"
+            >
+              <div class="relative p-5">
+                <div class="flex-shrink-0">
+                  <img
+                    class="w-full min-h-[250px] object-cover rounded-xl"
+                    src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                class="flex flex-1 flex-col justify-between px-6 pb-7 text-left"
+              >
+                <div class="flex-1">
+                  <p class="text-[16px] lg:text-[23px]">
+                    JULY 13, 2022
+                    <span
+                      class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[13px] lg:text-[15px] ml-4 font-bold"
+                      >ARTICLE</span
+                    >
+                  </p>
+                  <p
+                    class="text-[16px] lg:text-[24px] mt-4 lg:mt-6 font-medium text-gray-900"
+                  >
+                    Instagram PFP guide 2022: best size, ideas & tools
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="w-1/1 lg:w-1/3 2xl:w-1/2">
-        <div class="md:flex lg:block gap-0 md:gap-4 lg:gap-0 lg:max-w-[400px] lg:ml-auto">
-          <div class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white mb-8 md:mb-0 lg:mb-8 ">
-          <div class="relative p-5">
-            <div class="flex-shrink-0">
-              <img class="w-full min-h-[250px] object-cover rounded-xl" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">
+    <div class="max-w-screen-2xl mt-16 mx-auto">
+      <hr class="w-full bg-black" />
+    </div>
+
+    <div class="relative pt-16 mb-24 md:mb-36 lg:mb-48 px-6">
+      <div class="relative">
+        <div
+          class="mx-auto grid max-w-screen-2xl gap-8 md:gap-12 lg:gap-16 md:grid-cols-2 lg:grid-cols-3"
+        >
+          <div
+            class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white"
+          >
+            <div class="relative p-3 lg:p-5">
+              <div
+                class="flex-shrink-0 relative after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-60 after:rounded-xl"
+              >
+                <img
+                  class="w-full object-cover rounded-xl md:min-h-[300px]"
+                  src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                  alt=""
+                />
+
+                <div
+                  class="flex items-center justify-between text-white w-full absolute bottom-5 left-0 px-4 z-50"
+                >
+                  <div class="flex items-center flex-shrink-0">
+                    <a href="#">
+                      <img
+                        class="h-[20px] w-[20px] md:h-[32px] md:w-[32px] inline rounded-full"
+                        src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        alt=""
+                      />
+                    </a>
+                    <span
+                      class="inline ml-2 text-[12px] md:text-[16px] font-medium"
+                      >Brenna Goyette</span
+                    >
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-[12px] md:text-[16px] font-medium">
+                      JULY 13, 2022
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-1 flex-col justify-between px-6 pb-8 text-left"
+            >
+              <div class="flex-1">
+                <p
+                  class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[12px] md:text-[16px]"
+                >
+                  ARTICLE
+                </p>
+                <p
+                  class="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[29px] mt-4 lg:mt-7 font-medium text-gray-900"
+                >
+                  Instagram Direct Update — Instagram Quick Replies
+                </p>
+                <p
+                  class="mt-2 lg:mt-4 text-[14px] lg:text-[18px] text-gray-500"
+                >
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt
+                </p>
+
+                <a href="#" class="block text-right mt-8 lg:mt-12">
+                  <p
+                    class="text-[12px] md:text-[16px] lg:text-[20px] font-medium"
+                  >
+                    Read more
+                    <span
+                      class="ml-1 md:ml-3 border w-0 h-0 p-[3px] md:p-[4px] inline-block border-r-[3px] md:border-r-[4px] md:border-b-[4px] border-b-[3px] border-t-0 border-l-0 border-black -rotate-45"
+                    ></span>
+                  </p>
+                </a>
+              </div>
             </div>
           </div>
-            <div class="flex flex-1 flex-col justify-between px-6 pb-7 text-left">
+
+          <div
+            class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white"
+          >
+            <div class="relative p-3 lg:p-5">
+              <div
+                class="flex-shrink-0 relative after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-60 after:rounded-xl"
+              >
+                <img
+                  class="w-full object-cover rounded-xl md:min-h-[300px]"
+                  src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                  alt=""
+                />
+
+                <div
+                  class="flex items-center justify-between text-white w-full absolute bottom-5 left-0 px-4 z-50"
+                >
+                  <div class="flex items-center flex-shrink-0">
+                    <a href="#">
+                      <img
+                        class="h-[20px] w-[20px] md:h-[32px] md:w-[32px] inline rounded-full"
+                        src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        alt=""
+                      />
+                    </a>
+                    <span
+                      class="inline ml-2 text-[12px] md:text-[16px] font-medium"
+                      >Brenna Goyette</span
+                    >
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-[12px] md:text-[16px] font-medium">
+                      JULY 13, 2022
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-1 flex-col justify-between px-6 pb-8 text-left"
+            >
               <div class="flex-1">
-                <p class="text-[16px] lg:text-[23px]">JULY 13, 2022
-                  <span class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[13px] lg:text-[15px] ml-4 font-bold">ARTICLE</span></p>
-                <p class="text-[16px] lg:text-[24px] mt-4 lg:mt-6 font-medium text-gray-900">Instagram PFP guide 2022: best size, ideas & tools</p>
+                <p
+                  class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[12px] md:text-[16px]"
+                >
+                  ARTICLE
+                </p>
+                <p
+                  class="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[29px] mt-4 lg:mt-7 font-medium text-gray-900"
+                >
+                  Instagram Direct Update — Instagram Quick Replies
+                </p>
+                <p
+                  class="mt-2 lg:mt-4 text-[14px] lg:text-[18px] text-gray-500"
+                >
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt
+                </p>
+
+                <a href="#" class="block text-right mt-8 lg:mt-12">
+                  <p
+                    class="text-[12px] md:text-[16px] lg:text-[20px] font-medium"
+                  >
+                    Read more
+                    <span
+                      class="ml-1 md:ml-3 border w-0 h-0 p-[3px] md:p-[4px] inline-block border-r-[3px] md:border-r-[4px] md:border-b-[4px] border-b-[3px] border-t-0 border-l-0 border-black -rotate-45"
+                    ></span>
+                  </p>
+                </a>
               </div>
             </div>
           </div>
-  
-          <div class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white">
-            <div class="relative p-5">
-              <div class="flex-shrink-0">
-                <img class="w-full min-h-[250px] object-cover rounded-xl" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">
+
+          <div
+            class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white"
+          >
+            <div class="relative p-3 lg:p-5">
+              <div
+                class="flex-shrink-0 relative after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-60 after:rounded-xl"
+              >
+                <img
+                  class="w-full object-cover rounded-xl md:min-h-[300px]"
+                  src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                  alt=""
+                />
+
+                <div
+                  class="flex items-center justify-between text-white w-full absolute bottom-5 left-0 px-4 z-50"
+                >
+                  <div class="flex items-center flex-shrink-0">
+                    <a href="#">
+                      <img
+                        class="h-[20px] w-[20px] md:h-[32px] md:w-[32px] inline rounded-full"
+                        src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        alt=""
+                      />
+                    </a>
+                    <span
+                      class="inline ml-2 text-[12px] md:text-[16px] font-medium"
+                      >Brenna Goyette</span
+                    >
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-[12px] md:text-[16px] font-medium">
+                      JULY 13, 2022
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="flex flex-1 flex-col justify-between px-6 pb-7 text-left">
+
+            <div
+              class="flex flex-1 flex-col justify-between px-6 pb-8 text-left"
+            >
               <div class="flex-1">
-                <p class="text-[16px] lg:text-[23px]">JULY 13, 2022
-                  <span class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[13px] lg:text-[15px] ml-4 font-bold">ARTICLE</span></p>
-                <p class="text-[16px] lg:text-[24px] mt-4 lg:mt-6 font-medium text-gray-900">Instagram PFP guide 2022: best size, ideas & tools</p>
+                <p
+                  class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[12px] md:text-[16px]"
+                >
+                  ARTICLE
+                </p>
+                <p
+                  class="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[29px] mt-4 lg:mt-7 font-medium text-gray-900"
+                >
+                  Instagram Direct Update — Instagram Quick Replies
+                </p>
+                <p
+                  class="mt-2 lg:mt-4 text-[14px] lg:text-[18px] text-gray-500"
+                >
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt
+                </p>
+
+                <a href="#" class="block text-right mt-8 lg:mt-12">
+                  <p
+                    class="text-[12px] md:text-[16px] lg:text-[20px] font-medium"
+                  >
+                    Read more
+                    <span
+                      class="ml-1 md:ml-3 border w-0 h-0 p-[3px] md:p-[4px] inline-block border-r-[3px] md:border-r-[4px] md:border-b-[4px] border-b-[3px] border-t-0 border-l-0 border-black -rotate-45"
+                    ></span>
+                  </p>
+                </a>
               </div>
             </div>
+          </div>
+
+          <div
+            class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white"
+          >
+            <div class="relative p-3 lg:p-5">
+              <div
+                class="flex-shrink-0 relative after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-60 after:rounded-xl"
+              >
+                <img
+                  class="w-full object-cover rounded-xl md:min-h-[300px]"
+                  src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                  alt=""
+                />
+
+                <div
+                  class="flex items-center justify-between text-white w-full absolute bottom-5 left-0 px-4 z-50"
+                >
+                  <div class="flex items-center flex-shrink-0">
+                    <a href="#">
+                      <img
+                        class="h-[20px] w-[20px] md:h-[32px] md:w-[32px] inline rounded-full"
+                        src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        alt=""
+                      />
+                    </a>
+                    <span
+                      class="inline ml-2 text-[12px] md:text-[16px] font-medium"
+                      >Brenna Goyette</span
+                    >
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-[12px] md:text-[16px] font-medium">
+                      JULY 13, 2022
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <div
+              class="flex flex-1 flex-col justify-between px-6 pb-8 text-left"
+            >
+              <div class="flex-1">
+                <p
+                  class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[12px] md:text-[16px]"
+                >
+                  ARTICLE
+                </p>
+                <p
+                  class="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[29px] mt-4 lg:mt-7 font-medium text-gray-900"
+                >
+                  Instagram Direct Update — Instagram Quick Replies
+                </p>
+                <p
+                  class="mt-2 lg:mt-4 text-[14px] lg:text-[18px] text-gray-500"
+                >
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt
+                </p>
+
+                <a href="#" class="block text-right mt-8 lg:mt-12">
+                  <p
+                    class="text-[12px] md:text-[16px] lg:text-[20px] font-medium"
+                  >
+                    Read more
+                    <span
+                      class="ml-1 md:ml-3 border w-0 h-0 p-[3px] md:p-[4px] inline-block border-r-[3px] md:border-r-[4px] md:border-b-[4px] border-b-[3px] border-t-0 border-l-0 border-black -rotate-45"
+                    ></span>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white"
+          >
+            <div class="relative p-3 lg:p-5">
+              <div
+                class="flex-shrink-0 relative after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-60 after:rounded-xl"
+              >
+                <img
+                  class="w-full object-cover rounded-xl md:min-h-[300px]"
+                  src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                  alt=""
+                />
+
+                <div
+                  class="flex items-center justify-between text-white w-full absolute bottom-5 left-0 px-4 z-50"
+                >
+                  <div class="flex items-center flex-shrink-0">
+                    <a href="#">
+                      <img
+                        class="h-[20px] w-[20px] md:h-[32px] md:w-[32px] inline rounded-full"
+                        src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        alt=""
+                      />
+                    </a>
+                    <span
+                      class="inline ml-2 text-[12px] md:text-[16px] font-medium"
+                      >Brenna Goyette</span
+                    >
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-[12px] md:text-[16px] font-medium">
+                      JULY 13, 2022
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-1 flex-col justify-between px-6 pb-8 text-left"
+            >
+              <div class="flex-1">
+                <p
+                  class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[12px] md:text-[16px]"
+                >
+                  ARTICLE
+                </p>
+                <p
+                  class="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[29px] mt-4 lg:mt-7 font-medium text-gray-900"
+                >
+                  Instagram Direct Update — Instagram Quick Replies
+                </p>
+                <p
+                  class="mt-2 lg:mt-4 text-[14px] lg:text-[18px] text-gray-500"
+                >
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt
+                </p>
+
+                <a href="#" class="block text-right mt-8 lg:mt-12">
+                  <p
+                    class="text-[12px] md:text-[16px] lg:text-[20px] font-medium"
+                  >
+                    Read more
+                    <span
+                      class="ml-1 md:ml-3 border w-0 h-0 p-[3px] md:p-[4px] inline-block border-r-[3px] md:border-r-[4px] md:border-b-[4px] border-b-[3px] border-t-0 border-l-0 border-black -rotate-45"
+                    ></span>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white"
+          >
+            <div class="relative p-3 lg:p-5">
+              <div
+                class="flex-shrink-0 relative after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-60 after:rounded-xl"
+              >
+                <img
+                  class="w-full object-cover rounded-xl md:min-h-[300px]"
+                  src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                  alt=""
+                />
+
+                <div
+                  class="flex items-center justify-between text-white w-full absolute bottom-5 left-0 px-4 z-50"
+                >
+                  <div class="flex items-center flex-shrink-0">
+                    <a href="#">
+                      <img
+                        class="h-[20px] w-[20px] md:h-[32px] md:w-[32px] inline rounded-full"
+                        src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        alt=""
+                      />
+                    </a>
+                    <span
+                      class="inline ml-2 text-[12px] md:text-[16px] font-medium"
+                      >Brenna Goyette</span
+                    >
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-[12px] md:text-[16px] font-medium">
+                      JULY 13, 2022
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-1 flex-col justify-between px-6 pb-8 text-left"
+            >
+              <div class="flex-1">
+                <p
+                  class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[12px] md:text-[16px]"
+                >
+                  ARTICLE
+                </p>
+                <p
+                  class="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[29px] mt-4 lg:mt-7 font-medium text-gray-900"
+                >
+                  Instagram Direct Update — Instagram Quick Replies
+                </p>
+                <p
+                  class="mt-2 lg:mt-4 text-[14px] lg:text-[18px] text-gray-500"
+                >
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt
+                </p>
+
+                <a href="#" class="block text-right mt-8 lg:mt-12">
+                  <p
+                    class="text-[12px] md:text-[16px] lg:text-[20px] font-medium"
+                  >
+                    Read more
+                    <span
+                      class="ml-1 md:ml-3 border w-0 h-0 p-[3px] md:p-[4px] inline-block border-r-[3px] md:border-r-[4px] md:border-b-[4px] border-b-[3px] border-t-0 border-l-0 border-black -rotate-45"
+                    ></span>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="max-w-screen-2xl mt-16 mx-auto">
-    <hr class="w-full bg-black ">
-  </div>
-
-
-  <div class="relative pt-16 mb-24 md:mb-36 lg:mb-48 px-6">
-    <div class="relative">
-      <div class="mx-auto grid max-w-screen-2xl gap-8 md:gap-12 lg:gap-16 md:grid-cols-2 lg:grid-cols-3">
-      
-          <div class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white">
-            <div class="relative p-3 lg:p-5">
-              <div class="flex-shrink-0 relative after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-60 after:rounded-xl">
-                <img class="w-full object-cover rounded-xl md:min-h-[300px]" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">
-    
-                <div class="flex items-center justify-between text-white w-full absolute bottom-5 left-0 px-4 z-50">
-                  <div class="flex items-center flex-shrink-0">
-                    <a href="#">
-                      <img class="h-[20px] w-[20px] md:h-[32px] md:w-[32px] inline rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                    </a>
-                    <span class="inline ml-2 text-[12px] md:text-[16px] font-medium">Brenna Goyette</span>
-                  </div>
-                  <div class="ml-3">
-                      <p class="text-[12px] md:text-[16px] font-medium">
-                      JULY 13, 2022</p>
-                    </div>
-                  </div>
-              </div>
-            </div>
-    
-            <div class="flex flex-1 flex-col justify-between  px-6 pb-8 text-left">
-              <div class="flex-1">
-                <p class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[12px] md:text-[16px]">ARTICLE</p>
-                <p class="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[29px] mt-4 lg:mt-7 font-medium text-gray-900">Instagram Direct Update — Instagram Quick Replies</p>
-                <p class="mt-2 lg:mt-4 text-[14px] lg:text-[18px] text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
-
-                <a href="#" class="block text-right mt-8 lg:mt-12">
-                  <p class="text-[12px] md:text-[16px] lg:text-[20px] font-medium">Read more
-                    <span class="ml-1 md:ml-3 border w-0 h-0 p-[3px] md:p-[4px] inline-block border-r-[3px] md:border-r-[4px] md:border-b-[4px] border-b-[3px] border-t-0 border-l-0 border-black -rotate-45 "></span>
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white">
-            <div class="relative p-3 lg:p-5">
-              <div class="flex-shrink-0 relative after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-60 after:rounded-xl">
-                <img class="w-full object-cover rounded-xl md:min-h-[300px]" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">
-    
-                <div class="flex items-center justify-between text-white w-full absolute bottom-5 left-0 px-4 z-50">
-                  <div class="flex items-center flex-shrink-0">
-                    <a href="#">
-                      <img class="h-[20px] w-[20px] md:h-[32px] md:w-[32px] inline rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                    </a>
-                    <span class="inline ml-2 text-[12px] md:text-[16px] font-medium">Brenna Goyette</span>
-                  </div>
-                  <div class="ml-3">
-                      <p class="text-[12px] md:text-[16px] font-medium">
-                      JULY 13, 2022</p>
-                    </div>
-                  </div>
-              </div>
-            </div>
-    
-            <div class="flex flex-1 flex-col justify-between  px-6 pb-8 text-left">
-              <div class="flex-1">
-                <p class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[12px] md:text-[16px]">ARTICLE</p>
-                <p class="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[29px] mt-4 lg:mt-7 font-medium text-gray-900">Instagram Direct Update — Instagram Quick Replies</p>
-                <p class="mt-2 lg:mt-4 text-[14px] lg:text-[18px] text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
-
-                <a href="#" class="block text-right mt-8 lg:mt-12">
-                  <p class="text-[12px] md:text-[16px] lg:text-[20px] font-medium">Read more
-                    <span class="ml-1 md:ml-3 border w-0 h-0 p-[3px] md:p-[4px] inline-block border-r-[3px] md:border-r-[4px] md:border-b-[4px] border-b-[3px] border-t-0 border-l-0 border-black -rotate-45 "></span>
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-
-               
-          <div class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white">
-            <div class="relative p-3 lg:p-5">
-              <div class="flex-shrink-0 relative after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-60 after:rounded-xl">
-                <img class="w-full object-cover rounded-xl md:min-h-[300px]" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">
-    
-                <div class="flex items-center justify-between text-white w-full absolute bottom-5 left-0 px-4 z-50">
-                  <div class="flex items-center flex-shrink-0">
-                    <a href="#">
-                      <img class="h-[20px] w-[20px] md:h-[32px] md:w-[32px] inline rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                    </a>
-                    <span class="inline ml-2 text-[12px] md:text-[16px] font-medium">Brenna Goyette</span>
-                  </div>
-                  <div class="ml-3">
-                      <p class="text-[12px] md:text-[16px] font-medium">
-                      JULY 13, 2022</p>
-                    </div>
-                  </div>
-              </div>
-            </div>
-    
-            <div class="flex flex-1 flex-col justify-between  px-6 pb-8 text-left">
-              <div class="flex-1">
-                <p class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[12px] md:text-[16px]">ARTICLE</p>
-                <p class="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[29px] mt-4 lg:mt-7 font-medium text-gray-900">Instagram Direct Update — Instagram Quick Replies</p>
-                <p class="mt-2 lg:mt-4 text-[14px] lg:text-[18px] text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
-
-                <a href="#" class="block text-right mt-8 lg:mt-12">
-                  <p class="text-[12px] md:text-[16px] lg:text-[20px] font-medium">Read more
-                    <span class="ml-1 md:ml-3 border w-0 h-0 p-[3px] md:p-[4px] inline-block border-r-[3px] md:border-r-[4px] md:border-b-[4px] border-b-[3px] border-t-0 border-l-0 border-black -rotate-45 "></span>
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-
-                         
-          <div class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white">
-            <div class="relative p-3 lg:p-5">
-              <div class="flex-shrink-0 relative after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-60 after:rounded-xl">
-                <img class="w-full object-cover rounded-xl md:min-h-[300px]" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">
-    
-                <div class="flex items-center justify-between text-white w-full absolute bottom-5 left-0 px-4 z-50">
-                  <div class="flex items-center flex-shrink-0">
-                    <a href="#">
-                      <img class="h-[20px] w-[20px] md:h-[32px] md:w-[32px] inline rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                    </a>
-                    <span class="inline ml-2 text-[12px] md:text-[16px] font-medium">Brenna Goyette</span>
-                  </div>
-                  <div class="ml-3">
-                      <p class="text-[12px] md:text-[16px] font-medium">
-                      JULY 13, 2022</p>
-                    </div>
-                  </div>
-              </div>
-            </div>
-    
-            <div class="flex flex-1 flex-col justify-between  px-6 pb-8 text-left">
-              <div class="flex-1">
-                <p class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[12px] md:text-[16px]">ARTICLE</p>
-                <p class="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[29px] mt-4 lg:mt-7 font-medium text-gray-900">Instagram Direct Update — Instagram Quick Replies</p>
-                <p class="mt-2 lg:mt-4 text-[14px] lg:text-[18px] text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
-
-                <a href="#" class="block text-right mt-8 lg:mt-12">
-                  <p class="text-[12px] md:text-[16px] lg:text-[20px] font-medium">Read more
-                    <span class="ml-1 md:ml-3 border w-0 h-0 p-[3px] md:p-[4px] inline-block border-r-[3px] md:border-r-[4px] md:border-b-[4px] border-b-[3px] border-t-0 border-l-0 border-black -rotate-45 "></span>
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-
-                         
-          <div class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white">
-            <div class="relative p-3 lg:p-5">
-              <div class="flex-shrink-0 relative after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-60 after:rounded-xl">
-                <img class="w-full object-cover rounded-xl md:min-h-[300px]" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">
-    
-                <div class="flex items-center justify-between text-white w-full absolute bottom-5 left-0 px-4 z-50">
-                  <div class="flex items-center flex-shrink-0">
-                    <a href="#">
-                      <img class="h-[20px] w-[20px] md:h-[32px] md:w-[32px] inline rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                    </a>
-                    <span class="inline ml-2 text-[12px] md:text-[16px] font-medium">Brenna Goyette</span>
-                  </div>
-                  <div class="ml-3">
-                      <p class="text-[12px] md:text-[16px] font-medium">
-                      JULY 13, 2022</p>
-                    </div>
-                  </div>
-              </div>
-            </div>
-    
-            <div class="flex flex-1 flex-col justify-between  px-6 pb-8 text-left">
-              <div class="flex-1">
-                <p class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[12px] md:text-[16px]">ARTICLE</p>
-                <p class="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[29px] mt-4 lg:mt-7 font-medium text-gray-900">Instagram Direct Update — Instagram Quick Replies</p>
-                <p class="mt-2 lg:mt-4 text-[14px] lg:text-[18px] text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
-
-                <a href="#" class="block text-right mt-8 lg:mt-12">
-                  <p class="text-[12px] md:text-[16px] lg:text-[20px] font-medium">Read more
-                    <span class="ml-1 md:ml-3 border w-0 h-0 p-[3px] md:p-[4px] inline-block border-r-[3px] md:border-r-[4px] md:border-b-[4px] border-b-[3px] border-t-0 border-l-0 border-black -rotate-45 "></span>
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-
-                         
-          <div class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white">
-            <div class="relative p-3 lg:p-5">
-              <div class="flex-shrink-0 relative after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-60 after:rounded-xl">
-                <img class="w-full object-cover rounded-xl md:min-h-[300px]" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">
-    
-                <div class="flex items-center justify-between text-white w-full absolute bottom-5 left-0 px-4 z-50">
-                  <div class="flex items-center flex-shrink-0">
-                    <a href="#">
-                      <img class="h-[20px] w-[20px] md:h-[32px] md:w-[32px] inline rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                    </a>
-                    <span class="inline ml-2 text-[12px] md:text-[16px] font-medium">Brenna Goyette</span>
-                  </div>
-                  <div class="ml-3">
-                      <p class="text-[12px] md:text-[16px] font-medium">
-                      JULY 13, 2022</p>
-                    </div>
-                  </div>
-              </div>
-            </div>
-    
-            <div class="flex flex-1 flex-col justify-between  px-6 pb-8 text-left">
-              <div class="flex-1">
-                <p class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[12px] md:text-[16px]">ARTICLE</p>
-                <p class="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[29px] mt-4 lg:mt-7 font-medium text-gray-900">Instagram Direct Update — Instagram Quick Replies</p>
-                <p class="mt-2 lg:mt-4 text-[14px] lg:text-[18px] text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
-
-                <a href="#" class="block text-right mt-8 lg:mt-12">
-                  <p class="text-[12px] md:text-[16px] lg:text-[20px] font-medium">Read more
-                    <span class="ml-1 md:ml-3 border w-0 h-0 p-[3px] md:p-[4px] inline-block border-r-[3px] md:border-r-[4px] md:border-b-[4px] border-b-[3px] border-t-0 border-l-0 border-black -rotate-45 "></span>
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-
-      </div>
-    </div>
-</div>
-
-<footer class="p-7 lg:pt-[90px] md:pt-[60px] pt-[28px] bg-white dark:bg-gray-800">
-  <div class="mx-auto max-w-[1600px]">
-      <div class="md:flex md:justify-between">
-          <div class="mb-6 md:mb-0 max-w-[500px] md:block hidden">
-              <a href="#" class="flex items-center mb-8">
-                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">INSTAGRAM LOGO </span>
-              </a>
-              <p class="mb-16">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores</p>
-              <p class="mb-4 font-bold">Any questions?</p>
-              <a href="mailto:instadownloader@mail.com">
-                <span class="flex items-center">
-                  <img class="inline-block mr-2 max-w-[20px]" src="./assets/imgs/Icon feather-mail.png" alt="mailto">
-                  <span>instadownloader@mail.com</span>
-                </span>
-              </a>
-          </div>
-
-          <div class="grid gap-12 md:grid-cols-3 grid-cols-1 text-center md:text-left mb-8 md:mb-0">
-              <div>
-                  <h2 class="mb-6 text-md font-bold text-gray-900 uppercase dark:text-white ">Tools</h2>
-                  <ul class="text-gray-600 dark:text-gray-400 text-[20px]">
-                      <li class="mb-2 ">
-                          <a href="./404page.html" class="hover:underline">404</a>
-                      </li>
-                      <li class="mb-2">
-                          <a href="./blog.html" class="hover:underline">Search</a>
-                      </li>
-                      <li>
-                          <a href="#" class="hover:underline">Reels</a>
-                      </li>
-                  </ul>
-              </div>
-              <div>
-                <h2 class="mb-6 text-md font-bold text-gray-900 uppercase dark:text-white ">Legal</h2>
-                  <ul class="text-gray-600 dark:text-gray-400">
-                    <li class="mb-2 text-[20px]">
-                      <a href="#" class="hover:underline">ABOUT US</a>
-                    </li>
-                    <li class="mb-2 text-[20px]">
-                      <a href="#" class="hover:underline">Private Policy</a>
-                    </li>
-                    <li class="text-[20px]">
-                      <a href="#" class="hover:underline">Terms & Condition</a>
-                    </li>
-                  </ul>
-              </div>
-              <div>
-                <h2 class="mb-6 text-md font-bold text-gray-900 uppercase dark:text-white ">Legal</h2>
-                  <ul class="text-gray-600 dark:text-gray-400">
-                    <li class="mb-2 text-[20px]">
-                      <a href="#" class="hover:underline">ABOUT US</a>
-                    </li>
-                    <li class="mb-2 text-[20px]">
-                      <a href="#" class="hover:underline">Private Policy</a>
-                    </li>
-                    <li class="text-[20px]">
-                      <a href="#" class="hover:underline">Terms & Condition</a>
-                    </li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-      <div class="flex justify-center items-center">
-          <div class="flex mt-4 space-x-12 sm:justify-center sm:mt-0">
-              <a href="#" class="text-[#FC4F1E] dark:hover:text-white border border-[#FC4F1E] rounded-full p-1">
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
-              </a>
-
-              <a href="#" class="text-[#FC4F1E] dark:hover:text-white border border-[#FC4F1E] rounded-full p-1">
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
-              </a>
-
-              <a href="#" class="text-[#FC4F1E] dark:hover:text-white border border-[#FC4F1E] rounded-full p-1">
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+    <footer
+      class="p-7 xl:pl-[150px] xl:pr-[164px] px-5 lg:pt-[90px] md:pt-[60px] pt-[28px] bg-white"
+    >
+      <div class="mx-auto max-w-[1600px]">
+        <div class="md:flex md:justify-between">
+          <div
+            class="mb-6 md:mb-0 lg:max-w-[500px] block md:text-left text-center"
+          >
+            <a
+              href="#"
+              class="flex items-center mb-8 lg:justify-start justify-center"
+            >
+              <span
+                class="self-center text-2xl font-semibold whitespace-nowrap"
+              >
+                <img src="./assets/imgs/ig-logo-top.jpg" alt="" class="w-28" />
+              </span>
+            </a>
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores
+            </p>
+            <p class="mb-4 font-bold">Any questions?</p>
+            <a href="mailto:instadownloader@mail.com">
+              <span class="flex items-center md:justify-start justify-center">
+                <img
+                  class="inline-block mr-2 max-w-[20px]"
+                  src="./assets/imgs/Icon feather-mail.png"
+                  alt="mailto"
+                />
+                <span>instadownloader@mail.com</span>
+              </span>
             </a>
           </div>
-      </div>
 
-      <div class="mt-8 md:hidden text-center">
-        <h3 class="font-medium text-[16px] mb-2">NEED ANY HELP?</h1>
-          <div class="relative mb-8 w-full">
-            <input type="search" id="search" class="w-full outline-none bg-gray-200 py-2 px-7 rounded-full text-[12px]" value="instadownloader@mail.com">
-            <button class="text-[12px] absolute z-10 right-0 top-0 bg-[#FC4F1E] inline-block text-white py-2 px-8 rounded-full ">SEND</button>
+          <div
+            class="grid gap-12 md:grid-cols-3 grid-cols-1 text-center md:text-left mb-8 md:mb-0"
+          >
+            <div>
+              <h2 class="mb-6 text-md font-bold text-gray-900 uppercase">
+                Tools
+              </h2>
+              <ul class="text-gray-600 dark:text-gray-400 text-[20px]">
+                <li class="mb-2">
+                  <a href="./404page.html" class="hover:underline">404</a>
+                </li>
+                <li class="mb-2">
+                  <a href="./blog.html" class="hover:underline">Search</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline">Reels</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-6 text-md font-bold text-gray-900 uppercase e">
+                Legal
+              </h2>
+              <ul class="text-gray-600 dark:text-gray-400">
+                <li class="mb-2 text-[20px]">
+                  <a href="#" class="hover:underline">ABOUT US</a>
+                </li>
+                <li class="mb-2 text-[20px]">
+                  <a href="#" class="hover:underline">Private Policy</a>
+                </li>
+                <li class="text-[20px]">
+                  <a href="#" class="hover:underline">Terms & Condition</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-6 text-md font-bold text-gray-900 uppercase">
+                Legal
+              </h2>
+              <ul class="text-gray-600 dark:text-gray-400">
+                <li class="mb-2 text-[20px]">
+                  <a href="#" class="hover:underline">ABOUT US</a>
+                </li>
+                <li class="mb-2 text-[20px]">
+                  <a href="#" class="hover:underline">Private Policy</a>
+                </li>
+                <li class="text-[20px]">
+                  <a href="#" class="hover:underline">Terms & Condition</a>
+                </li>
+              </ul>
+            </div>
           </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <div class="flex mt-4 space-x-12 sm:justify-center sm:mt-6">
+            <a
+              href="#"
+              class="text-[#FC4F1E] border border-[#FC4F1E] rounded-full p-1"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
 
-          <div class="text-[17px] font-medium mb-3">INSTAGRAM LOGO</div>
-          <p class="text-[14px]">Copyright 2018</p>
+            <a
+              href="#"
+              class="text-[#FC4F1E] border border-[#FC4F1E] rounded-full p-1"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                />
+              </svg>
+            </a>
 
+            <a
+              href="#"
+              class="text-[#FC4F1E] border border-[#FC4F1E] rounded-full p-1"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
-  </div>
-</footer>
+    </footer>
 
-<div class="relative bg-[#303030]">
-<div class="mx-auto py-4 px-3 sm:px-6 lg:px-8">
-    <p class="text-[16px] lg:text-[21px] text-white text-center md:block hidden">
-      all instagram tm logos and trademarks displayed on this application are property of instagram.
-      <span class="ml-2">
-        © Copyright 2018  downloader.co
-      </span>
-    </p>
-</div>
-</div>
+    <div class="relative bg-[#303030]">
+      <div class="mx-auto py-4 px-3 sm:px-6 lg:px-8">
+        <p
+          class="text-[16px] lg:text-[21px] text-white text-center md:block capitalize"
+        >
+          all instagram tm logos and trademarks displayed on this application
+          are property of instagram.
+          <span class="ml-2"> © Copyright 2018 downloader.co </span>
+        </p>
+      </div>
+    </div>
 
-<script src="./assets/script/app.js"></script>
-</body>
+    <script src="./assets/script/app.js"></script>
+  </body>
 </html>
