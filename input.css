@@ -25,3 +25,7 @@
 .download-btn {
   filter: drop-shadow(0px 7px 20px rgba(252, 79, 30, 0.4));
 }
+
+html {
+  zoom: 80% !important;
+}
