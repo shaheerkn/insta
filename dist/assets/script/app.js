@@ -1,12 +1,16 @@
-const navSearch = document.querySelector(".navSearch");
 const faq = document.querySelectorAll(".faqLi");
 const faqMessage = document.querySelectorAll(".faqs-message");
 const headerBtn = document.getElementById("headerBtn");
 const headerMbl = document.querySelector(".headerBtn");
+const navSearch = document.querySelectorAll(".navSearch");
+const navInput = document.querySelectorAll(".navSearchWrapper > input");
 
 if (navSearch != null) {
-  navSearch.addEventListener("click", () => {
-    document.querySelector(".navSearchWrapper > input").style.opacity = 1;
+  navSearch.forEach((navsearch, i) => {
+    navsearch.addEventListener("click", () => {
+      navInput[i].style.opacity = 1;
+      navInput[i].focus();
+    });
   });
 }
 
@@ -152,3 +156,10 @@ if (tabs && tabsCard) {
     });
   });
 }
+
+let mobileTool = document.querySelector(".mobile-tool");
+let dropdownTool = document.querySelector(".tool-dropdown");
+mobileTool.addEventListener("click", () => {
+  dropdownTool.classList.toggle("hidden");
+  dropdownTool.classList.toggle("flex");
+});
