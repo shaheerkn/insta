@@ -159,7 +159,10 @@ if (tabs && tabsCard) {
 
 let mobileTool = document.querySelector(".mobile-tool");
 let dropdownTool = document.querySelector(".tool-dropdown");
-mobileTool.addEventListener("click", () => {
-  dropdownTool.classList.toggle("hidden");
-  dropdownTool.classList.toggle("flex");
-});
+
+if (mobileMenu && dropdownTool) {
+  mobileTool.addEventListener("click", () => {
+    dropdownTool.classList.toggle("hidden");
+    dropdownTool.classList.toggle("flex");
+  });
+}
